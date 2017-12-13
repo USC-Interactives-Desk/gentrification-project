@@ -1,0 +1,108 @@
+/* styles.css 
+   Project: USC Annenberg Media Interactives Desk
+   Author: Stefani Urmas
+   Date: Fall 2017
+*/
+
+
+/* STYLES.CSS */
+
+
+header {
+    background-color: #1B264C;
+}
+
+#navbar li {
+    border-bottom: 4px solid #1B264C;
+}
+
+#navbar li:hover {
+    background-color: #0B1538;
+    border-bottom: 4px solid #0B1538;
+} 
+
+li#home {
+    border-bottom: 4px solid #FFD800;
+}
+
+#navbar li#home:hover {
+    background-color: #0B1538;
+} 
+
+footer {
+    background-color: #1B264C;
+}
+
+#footer-spacer {
+    background-color: #1B264C;
+}
+
+
+/* STYLES-CATEGORIES.CSS */
+
+.navdot-active {
+    background-color: #FFD800;
+}
+
+#byline-texts h4 {
+    color: #1B264C;
+}
+
+.progressbar {
+    background: #1B264C;
+}
+
+
+.button-previous {
+    border: 1px solid #1B264C;
+    color: #1B264C;
+}
+
+.button-previous:hover {
+    background-color: #1B2F74;
+    border-color: #1B2F74;
+}
+
+.button-previous:active {
+    background-color: #1B2F74;
+    border-color: #1B2F74;
+}
+
+.button-next {
+    background-color: #1B264C;
+}
+
+.button-next:hover {
+    background-color: #1B2F74;
+}
+
+.button-next:active {
+    background-color: #1B2F74;
+    border-color: #1B2F74;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: #1B264C;
+}
+
+.carousel-arrow-active {
+    border-top: 8px solid #1B264C;
+}
+    
+.icon-background.facebook {
+    background-color: #3B5998;
+}
+
+.icon-background.twitter {
+    background-color: #00ACED;
+}
+    
+.icon-background.linkedin {
+    background-color: #0077B5;
+}
+
+.icon-background.mail {
+    background-color: #1B264C;
+}
+
+
