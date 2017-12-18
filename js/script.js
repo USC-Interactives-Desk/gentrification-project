@@ -4,10 +4,28 @@
    Date: Fall 2017
 */
 
+/*************************************************/
+// PREVENTING SWIPE PAGE GESTURE ON SPECIFIC ELEMENTS
+
+$(document).on('swipeleft swiperight', '.media', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+});
+
+$(document).on('swipeleft swiperight', '#related', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+});
+
+
+
+/*************************************************/
+// START OF DOCUMENT READY
 
 
 $(document).ready(function(){
     
+ 
     /*************************************************/
     // SOCIAL MEDIA BUTTONS ON THE FRONT PAGE (DESKTOP)
     
@@ -280,7 +298,7 @@ $(document).ready(function(){
     
     $("#scrollbox").css({"height": windowHeight + "px"});
     
-    $("#scrollbox-placeholder").css({"height": windowHeight + "px"});
+    $(".scrollbox-placeholder").css({"height": windowHeight + "px"});
     
     $(".text-box").css({"height": windowHeight + "px"});
     
@@ -311,6 +329,8 @@ $(document).ready(function(){
         }, {offset: 0 
 
     });
+    
+
     
     /* CHANGING IMAGES IN THE VERTICAL PHOTO GALLERY */
     
@@ -366,6 +386,10 @@ $(document).ready(function(){
             $("#vertical-navdots-container").fadeOut(500);
             
             $("#vertical-dot-05").css({"background-color": "white"});
+            
+            $("#scrollbox").css({"visibility": "hidden"});
+            
+            $("#scrollbox").css({"overflow": "hidden"});
         }
         
         }, {context: "#scrollbox", offset: -300
@@ -485,7 +509,7 @@ $(window).resize(function(){
     
     $("#scrollbox").css({"height": windowHeight + "px"});
     
-    $("#scrollbox-placeholder").css({"height": windowHeight + "px"});
+    $(".scrollbox-placeholder").css({"height": windowHeight + "px"});
     
     $(".text-box").css({"height": windowHeight + "px"});
     

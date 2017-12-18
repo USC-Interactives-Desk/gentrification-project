@@ -503,6 +503,7 @@ section.media {
     top: 0px;
     left: 0px;
     width: 100%;
+    width: 100%;
     height: auto;
     padding: 0% 6% 0% 72%;
     overflow: hidden;
@@ -1219,6 +1220,11 @@ p {
 #scrollbox {
     padding: 0% 50px 0% 20px;
 }
+    
+.scrollbox-placeholder {
+        height: 800px;
+    background-color: aqua;
+    }
 
     
 /* MOBILE SCREENS < 480px **********************************/
