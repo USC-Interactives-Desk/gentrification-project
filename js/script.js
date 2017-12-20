@@ -4,10 +4,28 @@
    Date: Fall 2017
 */
 
+/*************************************************/
+// PREVENTING SWIPE PAGE GESTURE ON SPECIFIC ELEMENTS
+
+$(document).on('swipeleft swiperight', '.media', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+});
+
+$(document).on('swipeleft swiperight', '#related', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+});
+
+
+
+/*************************************************/
+// START OF DOCUMENT READY
 
 
 $(document).ready(function(){
     
+ 
     /*************************************************/
     // SOCIAL MEDIA BUTTONS ON THE FRONT PAGE (DESKTOP)
     
@@ -280,7 +298,7 @@ $(document).ready(function(){
     
     $("#scrollbox").css({"height": windowHeight + "px"});
     
-    $("#scrollbox-placeholder").css({"height": windowHeight + "px"});
+    $(".scrollbox-placeholder").css({"height": windowHeight + "px"});
     
     $(".text-box").css({"height": windowHeight + "px"});
     
@@ -311,6 +329,8 @@ $(document).ready(function(){
         }, {offset: 0 
 
     });
+    
+
     
     /* CHANGING IMAGES IN THE VERTICAL PHOTO GALLERY */
     
@@ -366,6 +386,10 @@ $(document).ready(function(){
             $("#vertical-navdots-container").fadeOut(500);
             
             $("#vertical-dot-05").css({"background-color": "white"});
+            
+            $("#scrollbox").css({"visibility": "hidden"});
+            
+            $("#scrollbox").css({"overflow": "hidden"});
         }
         
         }, {context: "#scrollbox", offset: -300
@@ -456,7 +480,7 @@ $(document).ready(function(){
     /****************************/
     /* RELATED ARTICLE CAROUSEL */
 
-    $('.carousel').flickity({
+    $('.carousel-left').flickity({
         cellAlign: 'left',
         contain: true,
         setGallerySize: true,
@@ -468,7 +492,75 @@ $(document).ready(function(){
         prevNextButtons: false,
         pageDots: false,
         rightToLeft: false,
+        initialIndex: 1,
+    });
+    
+    $('.carousel-center').flickity({
+        cellAlign: 'left',
+        contain: true,
+        setGallerySize: true,
+        resize: true,
+        percentPosition: false,
+        freeScroll: true,
+        freeScrollFriction: 0.075,
+        wrapAround: false,
+        prevNextButtons: false,
+        pageDots: false,
+        rightToLeft: false,
+        initialIndex: 10,
     }); 
+    
+    $('.carousel-right').flickity({
+        cellAlign: 'left',
+        contain: true,
+        setGallerySize: true,
+        resize: true,
+        percentPosition: false,
+        freeScroll: true,
+        freeScrollFriction: 0.075,
+        wrapAround: false,
+        prevNextButtons: false,
+        pageDots: false,
+        rightToLeft: false,
+        initialIndex: 18,
+    }); 
+    
+    /* Hover effects for related article images */
+    
+    $(".related-pho-img").mouseenter(function(){
+        
+    var relatedCategory = $(this).attr("cat");
+        
+        if (relatedCategory == "cat-01") {
+            $(this).children("img").css({"filter": "grayscale(0%)", "border": "2px solid #C50000", "transform": "scale(1.02)"});
+            $(this).children("p").css({"color": "#777"});
+            $(this).children("h4").css({"color": "rgb(100,100,100)"});
+        } 
+        
+        if (relatedCategory == "cat-02") {
+            $(this).children("img").css({"filter": "grayscale(0%)", "border": "2px solid #0B1538", "transform": "scale(1.02)"});
+            $(this).children("p").css({"color": "#777"});
+            $(this).children("h4").css({"color": "rgb(100,100,100)"});
+        } 
+        
+        if (relatedCategory == "cat-03") {
+            $(this).children("img").css({"filter": "grayscale(0%)", "border": "2px solid #2097B5", "transform": "scale(1.02)"});
+            $(this).children("p").css({"color": "#777"});
+            $(this).children("h4").css({"color": "rgb(100,100,100)"});
+        } 
+        
+    });
+    
+    $(".related-pho-img").mouseleave(function(){
+        
+        $(this).children("img").css({"filter": "grayscale(100%)", "border": "2px solid #ddd", "transform": "scale(1)"});
+        $(this).children("p").css({"color": "white"});
+        $("p .related-active").css({"color": "ddd"});
+        $(this).children("h4").css({"color": "#999"});
+    });
+    
+   
+    
     
 }); /* END OF DOCUMENT READY */
 
@@ -485,7 +577,7 @@ $(window).resize(function(){
     
     $("#scrollbox").css({"height": windowHeight + "px"});
     
-    $("#scrollbox-placeholder").css({"height": windowHeight + "px"});
+    $(".scrollbox-placeholder").css({"height": windowHeight + "px"});
     
     $(".text-box").css({"height": windowHeight + "px"});
     
