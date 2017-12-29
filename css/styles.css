@@ -607,3 +607,11 @@ footer#footer-front {
 .gallery-arrow-background img {
     width: 8px;
 }
+	
+.inline-img {
+	width: 700px;
+}
+.caption {
+	font-style: italic;
+	font-size: 11px;
+	}
