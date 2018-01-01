@@ -29,7 +29,7 @@ li#cat-01 {
 }
 
 #header-image-01-01 {
-    background-image: url(../img/photo01.jpg);
+    background-image: url(../img/realestatedatafeatured.jpeg);
 }
 
 #header-image-01-02 {
@@ -38,6 +38,22 @@ li#cat-01 {
 
 #header-image-01-03 {
     background-image: url(../img/photo03.jpg);
+}
+
+#header-image-02-01 {
+    background-image: url(../img/revolutionario_featured.jpg);
+}
+
+#header-image-03-01 {
+    background-image: url(../img/issa_featured.jpeg);
+}
+
+#header-image-03-02 {
+    background-image: url(../img/service_featured.jpeg);
+}
+
+#header-image-03-03 {
+    background-image: url(../img/chess_featured.png);
 }
 
 /***********************************/
