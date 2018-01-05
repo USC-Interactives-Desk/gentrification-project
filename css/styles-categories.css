@@ -83,19 +83,70 @@ p {
     color: #464646;
 }
 
-#navdots-container {
+.header-buttons-container {
     position: absolute;
-    top: 75px;
+    top: 80px;
     left: 0px;
     width: 100%;
     height: auto;
-    margin: auto;
-    z-index: 800;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#navdots-container {
+    float: left;
+    position: relative;
+    width: 60%;
+    height: auto;
+    z-index: 800;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption-button-container {
+    float: left;
+    position: relative;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.caption-button {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.caption-button img{
+    width: 22px;
+    height: auto;
 }
 
 .navdot, .navdot-active {
@@ -473,7 +524,8 @@ p.caption {
     text-align: center;
     box-sizing: border-box;
     background-color:rgba(0, 0, 0, 0.5);
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
 
 section.media {

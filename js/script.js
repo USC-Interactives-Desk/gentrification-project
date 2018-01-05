@@ -19,13 +19,56 @@ $(document).on('swipeleft swiperight', '#related', function(event) {
 
 
 
+
+
+/*****************************************/
+
+//function refreshPage() {
+//    $.mobile.changePage(
+//        window.location.href,
+//        {
+//            allowSamePageTransition: true,
+//            transition: 'none',
+//            reloadPage: true
+//        });
+//}
+
+
 /*************************************************/
 // START OF DOCUMENT READY
-
 
 $(document).ready(function(){
     
  
+    /*************************************************/
+    // FEATURED IMAGE CAPTION BUTTON (DESKTOP)
+    
+
+    
+    
+    $(".featured-image-caption").slideUp();
+
+    var featuredCaption = false
+    
+    $('.caption-button').click(function(){
+            
+        if (featuredCaption == false) {
+            $(".header-texts").fadeOut(300);
+            $(".featured-image-caption").slideDown();
+            $("section").animate({top: "0px"});
+            $(".image-curtain").fadeOut(300);
+            $(".caption-button img").attr("src", "img/caption-close.svg");
+            featuredCaption = true;
+        } else {
+            $(".header-texts").fadeIn(300);
+            $(".image-curtain").fadeIn(300);
+            $(".featured-image-caption").slideUp();
+            $("section").animate({top: "-130px"});
+            $(".caption-button img").attr("src", "img/caption-icon.svg");
+            featuredCaption = false;
+        }
+    }); 
+    
     /*************************************************/
     // SOCIAL MEDIA BUTTONS ON THE FRONT PAGE (DESKTOP)
     
@@ -1008,5 +1051,7 @@ $(document).on('pageshow', function(){
     window.dispatchEvent (new
     Event('resize'));
 });
+
+
 
 
