@@ -43,9 +43,6 @@ $(document).ready(function(){
     /*************************************************/
     // FEATURED IMAGE CAPTION BUTTON (DESKTOP)
     
-
-    
-    
     $(".featured-image-caption").slideUp();
 
     var featuredCaption = false
@@ -585,7 +582,7 @@ $(document).ready(function(){
     }
     });
         
-        // AUDIO PROGRESS BAR SOUND 18
+    // AUDIO PROGRESS BAR SOUND 18
 
     var myAudio18 = document.getElementById('player-18'); // get the audio data from the image-audio box
     console.log(myAudio18)
@@ -731,15 +728,33 @@ $(document).ready(function(){
     // AUDIO IMAGE ORDER ON MOBILE (SCREEN < 480 px)
     
         if ($(window).width() < 480) {
-           $("#audio-imagebox-02").insertBefore("#audio-textbox-02");
-            $("#audio-imagebox-03").insertAfter("#audio-textbox-03"); 
+            $("#audio-imagebox-02").insertBefore("#audio-textbox-02");
+            $("#audio-imagebox-03").insertAfter("#audio-textbox-03");
+            $("#audio-imagebox-06").insertBefore("#audio-textbox-06");
+            $("#audio-imagebox-07").insertAfter("#audio-textbox-07");
+            $("#audio-imagebox-10").insertBefore("#audio-textbox-10");
+            $("#audio-imagebox-11").insertAfter("#audio-textbox-11");
+            $("#audio-imagebox-14").insertBefore("#audio-textbox-14");
+            $("#audio-imagebox-15").insertAfter("#audio-textbox-15");
+            $("#audio-imagebox-18").insertBefore("#audio-textbox-18");
+            $("#audio-imagebox-19").insertAfter("#audio-textbox-19");
+            $("#audio-imagebox-22").insertBefore("#audio-textbox-22");
         }  
     
     $(window).resize(function() {
         
         if ($(window).width() < 480) {
-           $("#audio-imagebox-02").insertBefore("#audio-textbox-02");
-            $("#audio-imagebox-03").insertAfter("#audio-textbox-03"); 
+            $("#audio-imagebox-02").insertBefore("#audio-textbox-02");
+            $("#audio-imagebox-03").insertAfter("#audio-textbox-03");
+            $("#audio-imagebox-06").insertBefore("#audio-textbox-06");
+            $("#audio-imagebox-07").insertAfter("#audio-textbox-07");
+            $("#audio-imagebox-10").insertBefore("#audio-textbox-10");
+            $("#audio-imagebox-11").insertAfter("#audio-textbox-11");
+            $("#audio-imagebox-14").insertBefore("#audio-textbox-14");
+            $("#audio-imagebox-15").insertAfter("#audio-textbox-15");
+            $("#audio-imagebox-18").insertBefore("#audio-textbox-18");
+            $("#audio-imagebox-19").insertAfter("#audio-textbox-19");
+            $("#audio-imagebox-22").insertBefore("#audio-textbox-22");
         }  
     });
     

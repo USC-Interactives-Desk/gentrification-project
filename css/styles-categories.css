@@ -322,8 +322,8 @@ section {
 }
 
 p.caption {
-	font-style: italic;
-	font-size: 16px;
+    font-size: 1.1em;
+    line-height: 1.4em;
     padding: 10px 0px;
     margin: 0px;
 }
@@ -762,9 +762,9 @@ section.media {
     transform: translateY(-50%);
     width: 0; 
     height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 12px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 14px solid white;
 }
 
 .image-triangle-left {
@@ -774,9 +774,9 @@ section.media {
     transform: translateY(-50%);
     width: 0; 
     height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 12px solid #f6f6f6;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 14px solid white;
 }
 
 .audio-imagebox img {
