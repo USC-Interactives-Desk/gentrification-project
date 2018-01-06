@@ -41,11 +41,7 @@ li#cat-01 {
 }
 
 #header-image-01-04 {
-    background-image: url(../img/gentrification/reef-rendering-featured.jpg);
-}
-
-#header-image-01-05 {
-    background-image: url(../img/gentrification/mall-employees-featured.jpg);
+    background-image: url(../img/gentrification/FeaturedImage_CrenshawPlaza.jpg);
 }
 
 #header-image-02-01 {
@@ -85,7 +81,7 @@ p {
 
 .header-buttons-container {
     position: absolute;
-    top: 80px;
+    top: 74px;
     left: 0px;
     width: 100%;
     height: auto;
@@ -123,12 +119,13 @@ p {
     height: auto;
     box-sizing: border-box;
     margin: 0;
-    padding-right: 20px;
-    overflow: hidden;
+    padding: 4px 14px 4px 0px;
+    overflow: visible;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    box-sizing: border-box;
 }
 
 .caption-button {
@@ -142,6 +139,8 @@ p {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0.4);
+    overflow: visible;
 }
 
 .caption-button img{
@@ -157,6 +156,7 @@ p {
     background-color: white;
     border-radius: 100%;
     opacity: .9;
+    box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.2);
 }
 
 .navdot-active {
@@ -498,14 +498,14 @@ p.caption {
 }
 
 #parallax-image-01-02 {
-    background-image: url(../img/gentrification/photo02.jpg);
+    background-image: url(../img/gentrification/CrenshawPlazaHousing_Image3.JPG);
 }
 
 #parallax-image-01-03 {
     background-image: url(../img/gentrification/reef-currentimage.jpg);
 }
 
-#parallax-image-01-05 {
+#parallax-image-01-04 {
     background-image: url(../img/gentrification/mall-employees-CrenshawPlaza-Image3.jpg);
 }
 
