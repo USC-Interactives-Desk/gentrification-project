@@ -474,6 +474,11 @@ footer#footer-front {
     padding-top: 40px;
 }
 
+.inlineimg {
+	width: 600px;
+}
+
+
 
 /*******************************************/
 
@@ -519,7 +524,7 @@ footer#footer-front {
         filter: grayscale(0%);
     }
 
-    #header-texts {
+    .header-texts {
         margin-top: 100px;
         display: flex;
         flex-direction: row;
@@ -529,12 +534,12 @@ footer#footer-front {
         font-family: 'Lato', Helvetica, sans-serif;
     }
 
-    #header-texts h1 {
+    .header-texts h1 {
         font-size: 3.4em;
         font-weight: 400;
     }
 
-    #header-texts h3 {
+    .header-texts h3 {
         font-size: 1.6em;
         font-weight: 300;
         text-align: center;
@@ -615,10 +620,3 @@ footer#footer-front {
         width: 8px;
     }
 }
-    
-	
-.inlineimg {
-	width: 600px;
-}
-    
-
