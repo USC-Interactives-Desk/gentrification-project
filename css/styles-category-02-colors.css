@@ -105,4 +105,11 @@ footer {
     background-color: #1B264C;
 }
 
+.quote-icon-container {
+    background-color: #1B2F74;
+}
+
+.pull-quote {
+    border-top: 4px solid #1B2F74;
+}
 
