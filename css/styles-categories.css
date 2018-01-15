@@ -95,7 +95,7 @@ p {
     justify-content: center;
 }
 
-#navdots-container {
+.navdots-container {
     float: left;
     position: relative;
     width: 60%;

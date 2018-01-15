@@ -38,11 +38,13 @@ $(document).ready(function(){
             $(".featured-image-caption").slideDown();
             $("section").animate({top: "0px"});
             $(".image-curtain").fadeOut(300);
+            $(".navdots-container").css({"opacity": "0"});
             $(".caption-button img").attr("src", "img/caption-close.svg");
             featuredCaption = true;
         } else {
             $(".header-texts").fadeIn(300);
             $(".image-curtain").fadeIn(300);
+            $(".navdots-container").css({"opacity": "1"});
             $(".featured-image-caption").slideUp();
             $("section").animate({top: "-130px"});
             $(".caption-button img").attr("src", "img/caption-icon.svg");
