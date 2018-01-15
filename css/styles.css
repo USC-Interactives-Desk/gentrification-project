@@ -114,7 +114,7 @@ li#home {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 120%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 10%, #000000 140%);
 }
 
 .header-texts {
@@ -136,7 +136,7 @@ li#home {
     margin: 0;
     padding: 20px 0px;
     font-family: 'Roboto Slab', serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1em;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -150,7 +150,7 @@ li#home {
     height: auto;
     margin: 0;
     font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 300;
     text-align: center;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
@@ -536,7 +536,8 @@ footer#footer-front {
     }
 
     .header-texts {
-        margin-top: 100px;
+        position: absolute;
+        bottom: 150px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -546,14 +547,16 @@ footer#footer-front {
     }
 
     .header-texts h1 {
-        font-size: 3.4em;
+        font-size: 3.1em;
+        line-height: 1.1em;
         font-weight: 400;
+        text-align: left;
     }
 
     .header-texts h3 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         font-weight: 300;
-        text-align: center;
+        text-align: left;
         text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
     }
 
