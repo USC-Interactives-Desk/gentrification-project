@@ -30,7 +30,12 @@
     <!-- STICKY HEADER FOR ALL ARTICLES -->
     
     <header  data-position="fixed" data-fullscreen>    
-        <nav id="navbar">
+        
+        <div class="logo">
+                <a href="http://www.uscannenbergmedia.com"><img src="img/annenberg-media-logo.png" /></a>
+        </div>
+        
+        <nav class="navbar">
             <ul>
                 <a href="index.html" rel="external" data-ajax="false"><li>Home</li></a>
                 <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
@@ -39,17 +44,23 @@
                 <a href="category-04.html" rel="external" data-ajax="false"><li id="home">People</li></a>
             </ul>
         </nav>
+        
+        <nav class="navbar-mobile">
+            <div class="burger-menu"></div>
+        </nav>
+        
     </header>
+    
 
 
 <!-- ************************************************************************ -->    
-    <!-- ARTICLE 3 STARTS -->
+    <!-- ARTICLE 1 STARTS -->
 
     <div data-role="page" id="article3">
 
         <div data-role="content">
 
-        <!-- ARTICLE 3: Side navigation for desktop screens -->
+        <!-- ARTICLE 1: Side navigation for desktop screens -->
         <a href="category-03.html#article7" rel="external" data-ajax="false">
             <nav id="slidenav-left">
                 <img src="img/arrow-left.png" />
@@ -61,6 +72,20 @@
                 <img src="img/arrow-right.png" />
             </nav>
         </a>
+        
+        <!-- ARTICLE 1: Mobile menu -->
+        
+        <nav class="mobile-menu">
+            <ul>
+                <a href="index.html" rel="external" data-ajax="false"><li>Home</li></a>
+                <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
+                <a href="category-02.html" rel="external" data-ajax="false"><li>Food</li></a>
+                <a href="category-03.html" rel="external" data-ajax="false"><li>News &amp; Culture</li></a>
+                <a href="category-04.html" rel="external" data-ajax="false"><li id="home">People</li></a>
+            </ul>
+        </nav>
+            
+        <!-- ARTICLE 1: Header image -->
 
         <div id="header-image-01-03" class="header-image">
             
@@ -79,7 +104,7 @@
                 
             </div>
             
-            <!-- ARTICLE 3: Header curtain dims the background image -->
+            <!-- ARTICLE 1: Header curtain dims the background image -->
             <div class="image-curtain"> 
                 <div class="header-texts">
                         <h1>Cat 04 Story 01</h1>
@@ -95,7 +120,7 @@
 
             <div class="text-container">
 
-                <!-- ARTICLE 3: Byline area starts-->
+                <!-- ARTICLE 1: Byline area starts-->
                 <div class="byline-container"> 
 
 <!--                    <img src="img/author-photo.jpg" />-->
@@ -105,7 +130,7 @@
                         <p>November 4th 2017</p>
                     </div>
 
-                    <!-- ARTICLE 3: Social icons on desktop, hidden on mobile -->
+                    <!-- ARTICLE 1: Social icons on desktop, hidden on mobile -->
                     <div class="social-icons"> 
 
                         <!-- Facebook -->
@@ -124,7 +149,7 @@
 
                 </div>
 
-                <!-- ARTICLE 3: 1st body text passage starts -->
+                <!-- ARTICLE 1: 1st body text passage starts -->
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 
@@ -134,13 +159,13 @@
 
         </section>
             
-        <!-- ARTICLE 3: AUDIO SECTION STARTS -->
+        <!-- ARTICLE 1: AUDIO SECTION STARTS -->
 
         <section class="media"> 
 
             <div class="audio-container">
 
-                <!-- ARTICLE 3: 1st audio textbox + button -->
+                <!-- ARTICLE 1: 1st audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-play">
                     <img src="img/audio-icon.png" sound="media/sound1.mp3" player="#player" photo="photo">
                         <div class="buffered">
@@ -153,7 +178,7 @@
                     <h4>“They’re trying to get rid of all the low income housing”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 1st image box -->
+                <!-- ARTICLE 1: 1st image box -->
                 <div class="audio-imagebox" id="audio-imagebox-01" imagebox="layer-01" photo="photo">
                     <img src="img/gentrification/VoxPop_AmirAswad_WestAdams.jpg" id="photo">
                         <div class="text-layer" id="layer-01">
@@ -164,7 +189,7 @@
                     <audio id="player" src="media/sound1.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 2nd audio textbox + button -->
+                <!-- ARTICLE 1: 2nd audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-02">
                     <img src="img/audio-icon.png" sound="media/sound2.mp3" player="#player-02" photo="photo-02">
                         <div class="buffered2">
@@ -177,7 +202,7 @@
                     <h4>“What it’s forcing people to do, is have like 10 people in one house”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 2nd image box -->
+                <!-- ARTICLE 1: 2nd image box -->
                 <div class="audio-imagebox" id="audio-imagebox-02" imagebox="layer-02" photo="photo-02">
                     <img src="img/gentrification/VoxPop_BeejayWatkins_WestAdams.jpg" id="photo-02">
                     <div class="text-layer" id="layer-02">
@@ -188,7 +213,7 @@
                     <audio id="player-02" src="media/sound2.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 3rd image box -->
+                <!-- ARTICLE 1: 3rd image box -->
                 <div class="audio-imagebox" id="audio-imagebox-03" imagebox="layer-03" photo="photo-03">
                     <img src="img/gentrification/VoxPop_MauricioBalladares_WestAdams.jpg" id="photo-03">
                     <div class="text-layer" id="layer-03">
@@ -199,7 +224,7 @@
                     <audio id="player-03" src="media/sound3.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 3rd audio textbox + button -->
+                <!-- ARTICLE 1: 3rd audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-03">
                     <img src="img/audio-icon.png" sound="media/sound3.mp3" player="#player-03" photo="photo-03">
                     <div class="buffered3">
@@ -212,7 +237,7 @@
                     <h4>“Sometimes now it’s not even possible to pay the rent”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 4th image box -->
+                <!-- ARTICLE 1: 4th image box -->
                  <div class="audio-imagebox" id="audio-imagebox-04" imagebox="layer-04" photo="photo-04">
                     <img src="img/gentrification/VoxPop_AnthonyLamas_WestAdams.jpg" id="photo-04">
                      <div class="text-layer" id="layer-04">
@@ -223,7 +248,7 @@
                      <audio id="player-04" src="media/sound4.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 4th audio textbox + button -->
+                <!-- ARTICLE 1: 4th audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-04">
                     <img src="img/audio-icon.png" sound="media/sound4.mp3" player="#player-04" photo="photo-04">
                     <div class="buffered4">
@@ -236,7 +261,7 @@
                     <h4>“People coming up […] they’re trying to buy us out”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 5 audio textbox + button -->
+                <!-- ARTICLE 1: 5 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-05">
                     <img src="img/audio-icon.png" sound="media/sound5.mp3" player="#player-05" photo="photo-05">
                     <div class="buffered5">
@@ -249,7 +274,7 @@
                     <h4>“A lot of the houses and constructions around the neighborhood being remodeled”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 5 image box -->
+                <!-- ARTICLE 1: 5 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-05" imagebox="layer-05" photo="photo-05">
                     <img src="media/VoxPop_AndreaMorales_WestAdams.mp4" id="photo-05">
                     <div class="text-layer" id="layer-05">
@@ -260,7 +285,7 @@
                     <audio id="player-05" src="media/sound5.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 6nd audio textbox + button -->
+                <!-- ARTICLE 1: 6nd audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-06">
                     <img src="img/audio-icon.png" sound="media/sound6.mp3" player="#player-06" photo="photo-06">
                         <div class="buffered6">
@@ -273,7 +298,7 @@
                     <h4>“Housing prices are crazy— it’s like you’re living 10 years ago in Beverly Hills”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 6nd image box -->
+                <!-- ARTICLE 1: 6nd image box -->
                 <div class="audio-imagebox" id="audio-imagebox-06" imagebox="layer-06" photo="photo-06">
                     <img src="media/VoxPop_RoniLopez_WestAdams.mp4" id="photo-06">
                     <div class="text-layer" id="layer-06">
@@ -284,7 +309,7 @@
                     <audio id="player-06" src="media/sound6.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 7 image box -->
+                <!-- ARTICLE 1: 7 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-07" imagebox="layer-07" photo="photo-07">
                     <img src="img/gentrification/VoxPop_TabithaSmith_HydePark.jpg" id="photo-07">
                     <div class="text-layer" id="layer-07">
@@ -295,7 +320,7 @@
                     <audio id="player-07" src="media/sound7.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 7 audio textbox + button -->
+                <!-- ARTICLE 1: 7 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-07">
                     <img src="img/audio-icon.png" sound="media/sound7.mp3" player="#player-07" photo="photo-07">
                     <div class="buffered7">
@@ -308,7 +333,7 @@
                     <h4>“I’m not really against the rail system”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 8th image box -->
+                <!-- ARTICLE 1: 8th image box -->
                  <div class="audio-imagebox" id="audio-imagebox-08" imagebox="layer-08" photo="photo-08">
                     <img src="img/gentrification/VoxPop_MyraHernandez_HydePark.jpg" id="photo-08">
                      <div class="text-layer" id="layer-08">
@@ -319,7 +344,7 @@
                      <audio id="player-08" src="media/sound8.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 8th audio textbox + button -->
+                <!-- ARTICLE 1: 8th audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-08">
                     <img src="img/audio-icon.png" sound="media/sound8.mp3" player="#player-08" photo="photo-08">
                     <div class="buffered8">
@@ -332,7 +357,7 @@
                     <h4>“They close the whole street right here, and nobody can pass”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 9 audio textbox + button -->
+                <!-- ARTICLE 1: 9 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-09">
                     <img src="img/audio-icon.png" sound="media/sound9.mp3" player="#player-09" photo="photo-09">
                     <div class="buffered9">
@@ -345,7 +370,7 @@
                     <h4>"A lot of people are moving out, selling their homes”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 9 image box -->
+                <!-- ARTICLE 1: 9 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-09" imagebox="layer-09" photo="photo-09">
                     <img src="img/gentrification/VoxPop_AdrianeGivens_HydePark.jpg" id="photo-09">
                     <div class="text-layer" id="layer-09">
@@ -356,7 +381,7 @@
                     <audio id="player-09" src="media/sound9.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 10th audio textbox + button -->
+                <!-- ARTICLE 1: 10th audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-10">
                     <img src="img/audio-icon.png" sound="media/sound10.mp3" player="#player-10" photo="photo-10">
                         <div class="buffered10">
@@ -369,7 +394,7 @@
                     <h4>“You could be looked at as stupid for passing that opportunity up”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 10th image box -->
+                <!-- ARTICLE 1: 10th image box -->
                 <div class="audio-imagebox" id="audio-imagebox-10" imagebox="layer-10" photo="photo-10">
                     <img src="img/gentrification/VoxPop_BrandonSankara_HydePark.jpg" id="photo-10">
                     <div class="text-layer" id="layer-10">
@@ -380,7 +405,7 @@
                     <audio id="player-10" src="media/sound10.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 11th image box -->
+                <!-- ARTICLE 1: 11th image box -->
                 <div class="audio-imagebox" id="audio-imagebox-11" imagebox="layer-11" photo="photo-11">
                     <img src="img/gentrification/VoxPop_ManuelFabian_ViewPark.jpg" id="photo-11">
                     <div class="text-layer" id="layer-11">
@@ -391,7 +416,7 @@
                     <audio id="player-11" src="media/sound11.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 11th audio textbox + button -->
+                <!-- ARTICLE 1: 11th audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-11">
                     <img src="img/audio-icon.png" sound="media/sound11.mp3" player="#player-11" photo="photo-11">
                     <div class="buffered11">
@@ -404,7 +429,7 @@
                     <h4>“A mixture of different communities, different people is good”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 12th image box -->
+                <!-- ARTICLE 1: 12th image box -->
                  <div class="audio-imagebox" id="audio-imagebox-12" imagebox="layer-12" photo="photo-12">
                     <img src="img/gentrification/VoxPop_LawrenceScurlark_Crenshaw.jpg" id="photo-12">
                      <div class="text-layer" id="layer-12">
@@ -415,7 +440,7 @@
                      <audio id="player-12" src="media/sound12.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 12th audio textbox + button -->
+                <!-- ARTICLE 1: 12th audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-12">
                     <img src="img/audio-icon.png" sound="media/sound12.mp3" player="#player-12" photo="photo-12">
                     <div class="buffered12">
@@ -428,7 +453,7 @@
                     <h4>“We decided to put it out there, that this is the Crenshaw district”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 13 audio textbox + button -->
+                <!-- ARTICLE 1: 13 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-13">
                     <img src="img/audio-icon.png" sound="media/sound13.mp3" player="#player-13" photo="photo-13">
                         <div class="buffered13">
@@ -441,7 +466,7 @@
                     <h4>“I’ve seen a lot of different nationalities come through”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 13 image box -->
+                <!-- ARTICLE 1: 13 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-13" imagebox="layer-13" photo="photo-13">
                     <img src="img/gentrification/VoxPop_MeekaRobinsonDavis_WindsorHills.jpg" id="photo-13">
                         <div class="text-layer" id="layer-13">
@@ -452,7 +477,7 @@
                     <audio id="player-13" src="media/sound13.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 14 audio textbox + button -->
+                <!-- ARTICLE 1: 14 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-14">
                     <img src="img/audio-icon.png" sound="media/sound14.mp3" player="#player-14" photo="photo-14">
                         <div class="buffered14">
@@ -465,7 +490,7 @@
                     <h4>“It’s not as unsafe as it used to be…”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 14 image box -->
+                <!-- ARTICLE 1: 14 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-14" imagebox="layer-14" photo="photo-02">
                     <img src="img/gentrification/VoxPop_DarronBlackburn_Crenshaw.jpg" id="photo-14">
                     <div class="text-layer" id="layer-14">
@@ -477,7 +502,7 @@
                 </div>
 
 
-                <!-- ARTICLE 3: 15 image box -->
+                <!-- ARTICLE 1: 15 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-15" imagebox="layer-15" photo="photo-03">
                     <img src="img/gentrification/VoxPop_SherrieColeman_Crenshaw.jpg" id="photo-15">
                     <div class="text-layer" id="layer-15">
@@ -488,7 +513,7 @@
                     <audio id="player-15" src="media/sound15.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 15 audio textbox + button -->
+                <!-- ARTICLE 1: 15 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-15">
                     <img src="img/audio-icon.png" sound="media/sound15.mp3" player="#player-15" photo="photo-15">
                     <div class="buffered15">
@@ -501,7 +526,7 @@
                     <h4>“The Metro system also became a big problem”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 16 image box -->
+                <!-- ARTICLE 1: 16 image box -->
                  <div class="audio-imagebox" id="audio-imagebox-16" imagebox="layer-16" photo="photo-16">
                     <img src="img/gentrification/VoxPop_JamarLucas_Crenshaw.jpg" id="photo-16">
                      <div class="text-layer" id="layer-16">
@@ -512,7 +537,7 @@
                      <audio id="player-16" src="media/sound16.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 16 audio textbox + button -->
+                <!-- ARTICLE 1: 16 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-16">
                     <img src="img/audio-icon.png" sound="media/sound16.mp3" player="#player-16" photo="photo-16">
                     <div class="buffered16">
@@ -525,7 +550,7 @@
                     <h4>“You still have to make way for the natives and the residents”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 17 audio textbox + button -->
+                <!-- ARTICLE 1: 17 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-17">
                     <img src="img/audio-icon.png" sound="media/sound17.mp3" player="#player-17" photo="photo-17">
                         <div class="buffered17">
@@ -538,7 +563,7 @@
                     <h4>“The gentrification is good and it’s bad”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 17 image box -->
+                <!-- ARTICLE 1: 17 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-17" imagebox="layer-17" photo="photo-17">
                     <img src="img/gentrification/VoxPop_SimoneWestby_ExpoPark.jpg" id="photo-17">
                         <div class="text-layer" id="layer-17">
@@ -549,7 +574,7 @@
                     <audio id="player-17" src="media/sound17.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 18 audio textbox + button -->
+                <!-- ARTICLE 1: 18 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-18">
                     <img src="img/audio-icon.png" sound="media/sound18.mp3" player="#player-18" photo="photo-18">
                         <div class="buffered18">
@@ -562,7 +587,7 @@
                     <h4>“I felt they were discriminating against minority youth”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 18 image box -->
+                <!-- ARTICLE 1: 18 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-18" imagebox="layer-18" photo="photo-02">
                     <img src="img/gentrification/VoxPop_AnaCarril-Grumberg_Crenshaw.jpg" id="photo-18">
                     <div class="text-layer" id="layer-18">
@@ -573,7 +598,7 @@
                     <audio id="player-18" src="media/sound18.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 19 image box -->
+                <!-- ARTICLE 1: 19 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-19" imagebox="layer-19" photo="photo-19">
                     <img src="img/gentrification/VoxPop_LauraFried_ExpoPark.jpg" id="photo-19">
                     <div class="text-layer" id="layer-19">
@@ -584,7 +609,7 @@
                     <audio id="player-19" src="media/sound19.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 19 audio textbox + button -->
+                <!-- ARTICLE 1: 19 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-19">
                     <img src="img/audio-icon.png" sound="media/sound19.mp3" player="#player-19" photo="photo-19">
                     <div class="buffered19">
@@ -597,7 +622,7 @@
                     <h4>“Changing demographics in this neighborhood, that may change for artists”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 20 image box -->
+                <!-- ARTICLE 1: 20 image box -->
                  <div class="audio-imagebox" id="audio-imagebox-20" imagebox="layer-20" photo="photo-20">
                     <img src="img/gentrification/VoxPop_MikeStenstrom_ExpoPark.jpg" id="photo-20">
                      <div class="text-layer" id="layer-20">
@@ -608,7 +633,7 @@
                      <audio id="player-20" src="media/sound20.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 20 audio textbox + button -->
+                <!-- ARTICLE 1: 20 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-20">
                     <img src="img/audio-icon.png" sound="media/sound20.mp3" player="#player-20" photo="photo-20">
                     <div class="buffered20">
@@ -621,7 +646,7 @@
                     <h4>“In my own neighborhood, the prices have gone up”</h4>
                 </div>
                 
-                <!-- ARTICLE 3: 21 audio textbox + button -->
+                <!-- ARTICLE 1: 21 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-21">
                     <img src="img/audio-icon.png" sound="media/sound21.mp3" player="#player-21" photo="photo-21">
                         <div class="buffered21">
@@ -634,7 +659,7 @@
                     <h4>“The housing market is really hard to get into”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 21 image box -->
+                <!-- ARTICLE 1: 21 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-21" imagebox="layer-21" photo="photo-21">
                     <img src="img/gentrification/VoxPop_StacyLeimkuhler_ExpoPark.jpg" id="photo-21">
                         <div class="text-layer" id="layer-21">
@@ -645,7 +670,7 @@
                     <audio id="player-21" src="media/sound21.mp3" controls></audio>
                 </div>
 
-                <!-- ARTICLE 3: 22 audio textbox + button -->
+                <!-- ARTICLE 1: 22 audio textbox + button -->
                 <div class="audio-textbox" id="audio-textbox-22">
                     <img src="img/audio-icon.png" sound="media/sound22.mp3" player="#player-22" photo="photo-22">
                         <div class="buffered22">
@@ -658,7 +683,7 @@
                     <h4>“We're taught to build the community, not destroy it”</h4>
                 </div>
 
-                <!-- ARTICLE 3: 22 image box -->
+                <!-- ARTICLE 1: 22 image box -->
                 <div class="audio-imagebox" id="audio-imagebox-22" imagebox="layer-22" photo="photo-22">
                     <img src="img/gentrification/VoxPop_JustinWestby_Crenshaw.jpg" id="photo-22">
                     <div class="text-layer" id="layer-22">
@@ -677,7 +702,7 @@
 
             <div class="text-container">
 
-                <!-- ARTICLE 3: 1st body text passage starts -->
+                <!-- ARTICLE 1: 1st body text passage starts -->
 
                 <p></p>
 
@@ -691,7 +716,7 @@
         </section>
 
 
-        <!-- ARTICLE 3: RELATED ARTICLES SECTION STARTS -->      
+        <!-- ARTICLE 1: RELATED ARTICLES SECTION STARTS -->      
         
         <section id="related"> 
             <div class="carousel carousel-left">
@@ -881,13 +906,14 @@
         </section>
             
 
-        <!-- ARTICLE 3: FOOTER STARTS --> 
+        <!-- ARTICLE 1: FOOTER STARTS --> 
             
         <!-- ARTICLE 1: FOOTER STARTS -->
         
         <footer>
             <img src="img/annenberg-media-logo.png" />
             <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
             <div id="footer-spacer"></div>
         </footer>
             
