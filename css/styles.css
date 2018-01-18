@@ -37,7 +37,7 @@ header {
     float: left;
     width: 20%;
     height: 60px;
-    margin: 2px 40px 2px 50px;
+    margin: 0px 40px 0px 50px;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -48,6 +48,7 @@ header {
 .logo img {
     width: 300px;
     height: auto;
+    padding-top: 5px;
 }
 
 .navbar {
@@ -64,10 +65,6 @@ header {
 }
 
 .navbar-mobile {
-    display: none;
-}
-
-.mobile-menu {
     display: none;
 }
 
@@ -558,7 +555,7 @@ footer#footer-front {
     .burger-menu {
         width: 30px;
         height: 30px;
-        margin: 0px 15%;
+        margin: 0px 26px;
         font-family: FontAwesome;
         color: white;
         display: flex;
@@ -572,15 +569,22 @@ footer#footer-front {
         content: "\f0c9";
     }
     
+    .burger-menu.java:before {
+        content: "\f00d";
+    }
+    
     /* RESPONSIVE 480px Mobile menu */
     
     .mobile-menu {
+        position: relative;
+        top: 0px;
         display: block;
+        overflow: visible;
         width: 100%;
         height: auto;
-        z-index: 999;
         margin: 0;
-        padding: 0px
+        padding: 0;
+        z-index: 800;
     }
     
     .mobile-menu ul {
@@ -589,24 +593,40 @@ footer#footer-front {
         margin: 0;
         padding: 0;
     }
-    
+
     .mobile-menu li {
+        float: left;
         width: 100%;
         height: 60px;
-        background-color: white;
+        background-color: #C50000;
         list-style: none;
         margin: 0px;
-        border-bottom: 1px solid #C50000;
-        height: 60px;
-        padding: 20px 30px;
-        color: #C50000;
+        border-bottom: 1px solid white;
+        padding: 20px 20px 20px 50px;
+        color: white;
         text-transform: uppercase;
         letter-spacing: 1px;
+        box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+
+    }
+    
+    .mobile-menu li:before {
+        font-family: FontAwesome;
+        content: "\f0da";
+        padding-right: 8px;
+    }
+    
+    li.category-active {
+        color: #FFD800;
     }
     
 
     /* RESPONSIVE 480px Header image */
 
+    header {
+        overflow: visible;
+    }
+    
     #header-image {
         position: relative;
         padding: 0;
@@ -621,7 +641,7 @@ footer#footer-front {
         background-attachment: fixed;
         filter: grayscale(0%);
     }
-
+    
     .header-texts {
         position: absolute;
         bottom: 150px;

@@ -25,6 +25,28 @@ $(document).ready(function(){
     
  
     /*************************************************/
+    // MOBILE BURGER MENU BUTTON
+    
+    $(".mobile-menu").slideUp();
+
+    var mobileMenu = false
+    
+    $('.burger-menu').click(function(){
+            
+        $(this).toggleClass("java");
+        
+        if (mobileMenu == false) {
+            $(".mobile-menu").slideDown();
+            
+            mobileMenu = true;
+        } else {
+            $(".mobile-menu").slideUp();
+            mobileMenu = false;
+        }
+    });
+    
+    
+    /*************************************************/
     // FEATURED IMAGE CAPTION BUTTON (DESKTOP)
     
     $(".featured-image-caption").slideUp();

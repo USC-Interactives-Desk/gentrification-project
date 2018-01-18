@@ -110,6 +110,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 200;
 }
 
 .caption-button-container {
@@ -119,13 +120,14 @@ p {
     height: auto;
     box-sizing: border-box;
     margin: 0;
-    padding: 4px 14px 4px 0px;
+    padding: 4px 22px 4px 0px;
     overflow: visible;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
+    z-index: 300;
 }
 
 .caption-button {
