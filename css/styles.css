@@ -537,6 +537,10 @@ footer#footer-front {
         display: none;
     }
     
+    .logo {
+        margin-left: 25px;
+    }
+    
     .logo img {
         width: 270px;
     }
@@ -602,7 +606,7 @@ footer#footer-front {
         list-style: none;
         margin: 0px;
         border-bottom: 1px solid white;
-        padding: 20px 20px 20px 50px;
+        padding: 20px 20px 20px 25px;
         color: white;
         text-transform: uppercase;
         letter-spacing: 1px;

@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     var mobileMenu = false
     
-    $('.burger-menu').click(function(){
+    $(".burger-menu").click(function(){
             
         $(this).toggleClass("java");
         
