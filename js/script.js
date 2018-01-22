@@ -18,28 +18,34 @@ $(document).on('swipeleft swiperight', '#related', function(event) {
 });
 
 
-
-
-
-/*****************************************/
-
-//function refreshPage() {
-//    $.mobile.changePage(
-//        window.location.href,
-//        {
-//            allowSamePageTransition: true,
-//            transition: 'none',
-//            reloadPage: true
-//        });
-//}
-
-
 /*************************************************/
 // START OF DOCUMENT READY
 
 $(document).ready(function(){
     
  
+    /*************************************************/
+    // MOBILE BURGER MENU BUTTON
+    
+    $(".mobile-menu").slideUp();
+
+    var mobileMenu = false
+    
+    $(".burger-menu").click(function(){
+            
+        $(this).toggleClass("java");
+        
+        if (mobileMenu == false) {
+            $(".mobile-menu").slideDown();
+            
+            mobileMenu = true;
+        } else {
+            $(".mobile-menu").slideUp();
+            mobileMenu = false;
+        }
+    });
+    
+    
     /*************************************************/
     // FEATURED IMAGE CAPTION BUTTON (DESKTOP)
     
@@ -54,11 +60,13 @@ $(document).ready(function(){
             $(".featured-image-caption").slideDown();
             $("section").animate({top: "0px"});
             $(".image-curtain").fadeOut(300);
+            $(".navdots-container").css({"opacity": "0"});
             $(".caption-button img").attr("src", "img/caption-close.svg");
             featuredCaption = true;
         } else {
             $(".header-texts").fadeIn(300);
             $(".image-curtain").fadeIn(300);
+            $(".navdots-container").css({"opacity": "1"});
             $(".featured-image-caption").slideUp();
             $("section").animate({top: "-130px"});
             $(".caption-button img").attr("src", "img/caption-icon.svg");
@@ -70,7 +78,6 @@ $(document).ready(function(){
     // SOCIAL MEDIA BUTTONS ON THE FRONT PAGE (DESKTOP)
     
     $('.icon-background-front').mouseenter(function(){
-        console.log("mouse in the house");
         
         var color = $(this).attr("brand-color");
         
@@ -79,7 +86,6 @@ $(document).ready(function(){
     });
     
     $('.icon-background-front').mouseleave(function(){
-        console.log("mouse in the house");
         
         $(this).css({"background-color": "", "transform": "scale(1.00)"});
         
@@ -88,8 +94,7 @@ $(document).ready(function(){
     // SOCIAL MEDIA BUTTONS ON ARTICLES (DESKTOP)
     
     $('.icon-background').mouseenter(function(){
-        console.log("mouse in the house");
-        
+
         var color = $(this).attr("brand-color");
         
         $(this).css({"background-color": color, "transform": "scale(1.05)"});
@@ -97,9 +102,8 @@ $(document).ready(function(){
     });
     
     $('.icon-background').mouseleave(function(){
-        console.log("mouse in the house");
         
-    $(this).css({"background-color": "", "transform": "scale(1.00)"});
+        $(this).css({"background-color": "", "transform": "scale(1.00)"});
         
     });
     
@@ -933,6 +937,7 @@ $(document).ready(function(){
     }); 
     
     /* CAROUSEL PHOTO GALLERY TEXT LAYERS */
+
     
     $(document).ready(function(){ 
         $(".gallery-text-layer").slideUp();
@@ -949,7 +954,6 @@ $(document).ready(function(){
     });
     
 
-    
     /****************************/
     /* RELATED ARTICLE CAROUSEL */
 

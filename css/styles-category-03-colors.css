@@ -12,11 +12,11 @@ header {
     background-color: #2AAACB;
 }
 
-#navbar li {
+.navbar li {
     border-bottom: 4px solid #2AAACB;
 }
 
-#navbar li:hover {
+.navbar li:hover {
     background-color: #2097B5;
     border-bottom: 4px solid #2097B5;
 } 
@@ -25,7 +25,7 @@ li#home {
     border-bottom: 4px solid #FFD800;
 }
 
-#navbar li#home:hover {
+.navbar li#home:hover {
     background-color: #2097B5;
 } 
 
@@ -102,5 +102,13 @@ footer {
 }
 
 .icon-background.mail {
+    background-color: #2AAACB;
+}
+
+.pull-quote {
+    border-top: 4px solid #2AAACB;
+}
+
+.quote-icon-container {
     background-color: #2AAACB;
 }

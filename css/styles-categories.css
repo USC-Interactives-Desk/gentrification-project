@@ -33,7 +33,7 @@ li#cat-01 {
 }
 
 #header-image-01-02 {
-    background-image: url(../img/gentrification/CrenshawPlazaHousing_FeaturedImage.png);
+    background-image: url(../img/gentrification/CrenshawPlazaHousing_FeaturedImage.jpg);
 }
 
 #header-image-01-03 {
@@ -45,23 +45,23 @@ li#cat-01 {
 }
 
 #header-image-02-01 {
-    background-image: url(../img/revolutionario_featured.jpg);
+    background-image: url(../img/food/revolutionario_featured.jpg);
 }
 
 #header-image-03-01 {
-    background-image: url(../img/issa_featured.jpeg);
+    background-image: url(../img/culture/issa_featured.jpeg);
 }
 
 #header-image-03-02 {
-    background-image: url(../img/service_featured.jpeg);
+    background-image: url(../img/culture/service_featured.jpeg);
 }
 
 #header-image-03-03 {
-    background-image: url(../img/chess_featured.png);
+    background-image: url(../img/culture/chess_featured.jpg);
 }
 
 #header-image-03-04 {
-    background-image: url(../img/dreamers_featured.png);
+    background-image: url(../img/culture/dreamers_featured.png);
 }
 
 /***********************************/
@@ -95,7 +95,7 @@ p {
     justify-content: center;
 }
 
-#navdots-container {
+.navdots-container {
     float: left;
     position: relative;
     width: 60%;
@@ -110,6 +110,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 200;
 }
 
 .caption-button-container {
@@ -119,13 +120,14 @@ p {
     height: auto;
     box-sizing: border-box;
     margin: 0;
-    padding: 4px 14px 4px 0px;
+    padding: 4px 22px 4px 0px;
     overflow: visible;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
+    z-index: 300;
 }
 
 .caption-button {
@@ -328,7 +330,7 @@ p.caption {
     margin: 0px;
 }
 
-#byline-container {
+.byline-container {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -344,7 +346,7 @@ p.caption {
     margin-bottom: 14px;
 }
         
-#byline-container img {
+.byline-container img {
     float: left;
     width: 15%;
     max-width: 90px;
@@ -354,7 +356,7 @@ p.caption {
     display: block;
 }
 
-#byline-container img:hover {
+.byline-container img:hover {
     filter: grayscale(0%);
 }
 
@@ -394,23 +396,103 @@ p.caption {
 
 .text-container iframe {
     width: 100%;
+    height: auto;
     border: 0px solid; 
 }
+
+/***********************************/
+/* PULL QUOTE */
+
+.pull-quote {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 25px 0px 20px 0px;
+    padding: 15px 20px 20px 20px;
+    font-style: italic;
+    border-top: 4px solid #C50000;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quote-icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #C50000;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 20px 12px 0px;
+}
+
+.quote-icon-container img {
+    width: 38px;
+    height: 38px;
+}
+
+.quote-container {
+    float: left;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    text-align: left;
+}
+
+.pull-quote p {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    color: #555;
+}
+
+p.pull-quote-source {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 0px;
+}
+
+
 
 
 /***********************************/
 /* SOCIAL MEDIA SHARE BUTTONS */
 
-#social-icons {
-    float: right;
+.social-icons {
+    float: left;
     width: 40%;
     height: auto; 
     overflow: visible;
     box-sizing: border-box;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-#social-icons-mobile {
+.social-icons-mobile {
     display: none;
 }
 
@@ -662,6 +744,8 @@ section.media {
     height: auto;
     box-sizing: border-box;
     display: block;
+    border-radius: 100%;
+    box-shadow: 0px 0.5px 9px rgba(0,0,0,.4);
 }
 
 .progressbar-container {
@@ -694,7 +778,7 @@ section.media {
     font-size: 1.4em;
     line-height: 1.4em;
     margin: 0px;
-    padding-top: 10px;
+    padding: 20px 0px;
 }
 
 .audio-imagebox {
@@ -724,7 +808,7 @@ section.media {
 	width: 100%;
 	padding: 30px;
     margin-top: 70%;
-	height: 20%;
+	height: 28%;
 	box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -749,7 +833,7 @@ section.media {
 	color: white;
 	font-size: 1em;
     font-weight: 300;
-	line-height: 1.4em;
+	line-height: 1.3em;
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -920,6 +1004,14 @@ section.media {
 
 /*******************************/
 /* CAROUSEL PHOTO GALLERY */
+
+.desktop-gallery {
+    display: block;
+}
+
+.mobile-gallery {
+   display: none; 
+}
 
 .carousel-gallery {
     width: 100%;
@@ -1169,6 +1261,12 @@ section#related {
         font-size: 1.25em;
         line-height: 1.55em;
     }    
+    
+    .mobile-image {
+        height: 400px;
+        object-fit: cover;
+        overflow: hidden;
+    }
 
     /* MOBILE SCREENS < 480px **********************************/
     /* CAPTION BUTTON */
@@ -1209,7 +1307,7 @@ section#related {
         padding: 20px 15px;
     }
 
-    #byline-container img {
+    .byline-container img {
         width: 20%;
         margin-bottom: 0px;
         display: block;
@@ -1219,14 +1317,14 @@ section#related {
         width: 80%;
     }
 
-    #social-icons {
+    .social-icons {
         display: none;
     }
 
     /* MOBILE SCREENS < 480px **********************************/
     /* SOCIAL MEDIA SHARE BUTTONS */
 
-    #social-icons-mobile {
+    .social-icons-mobile {
         position: fixed;
         bottom: 20px;
         float: right;
@@ -1325,6 +1423,30 @@ section#related {
     .email-icon:before {
         content: "\f0e0";
     }
+    
+    /* MOBILE SCREENS < 480px
+    /***********************************/
+    /* PULL QUOTE */
+
+    .pull-quote {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quote-container {
+        align-items: center;
+
+    }
+
+    .pull-quote p {
+        text-align: center;
+    }
+
+    p.pull-quote-source {
+        text-align: center;
+        padding-top: 10px;
+    }
+
 
     /* MOBILE SCREENS < 480px **********************************/
     /* PARALLAX IMAGE */
@@ -1374,8 +1496,70 @@ section#related {
             height: 800px;
         background-color: aqua;
         }
+    
+    
+    
+    /* MOBILE SCREENS < 480px **********************************/
+    /* CAROUSEL PHOTO GALLERY */
 
+    .desktop-gallery {
+        display: none;
+    }
 
+    .mobile-gallery {
+       display: block; 
+    }
+
+    .gallery-cell {
+        width: 100%;
+    }
+
+    .gallery-cell img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        display: block;
+    }
+
+    .gallery-cell.is-selected {
+        filter: grayscale(0%);
+        filter: brightness(100%);
+    }
+
+    .flickity-page-dots {
+        top: -3px;
+        margin-bottom: 0px;
+        height: 10px;
+    }
+
+    .flickity-page-dots .dot {
+        width: 9px;
+        height: 9px;
+        opacity: 1;
+        background: #ddd;
+        z-index: 800;
+    }
+
+    .flickity-page-dots .dot.is-selected {
+        background: #FF0000;
+    }
+
+    .gallery-text-layer {
+        position: absolute;
+        bottom: 0px;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0,0,0,.5);
+        color: white;
+        padding: 10px 20px;
+        overflow: hidden;
+        z-index: 900;
+    }
+
+    
+    
+    
     /* MOBILE SCREENS < 480px **********************************/
     /* AUDIO GRID */
 
@@ -1416,16 +1600,16 @@ section#related {
     .text-layer {
         padding: 15px;
         margin-top: 70%;
-        height: 60%;
+        height: 58%;
     }
 
     .text-layer h4 {
-        font-size: 1.1em;
-        line-height: 1.3em;
+        font-size: 1em;
+        line-height: 1.4em;
     }
 
     .text-layer p {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 1.2em;
     }
 

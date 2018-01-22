@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>South Gentrification – Food</title>
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:url" content="http://annenberginteractives.com/south_centrification/category-02.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="South Gentrification-Food" />
+    <meta property="og:image" content="http://annenberginteractives.com/south_centrification/img/revolutionario_featured.jpg" />
+    <!-- TWITTER CARD DATA -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="South Gentrification - Food">
+    <meta name="twitter:image:src" content="http://annenberginteractives.com/south_centrification/img/revolutionario_featured.jpg">
     <!-- FONTS -->
     <script src="https://use.fontawesome.com/721ef12779.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet" type="text/css">
@@ -16,7 +25,7 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
     <link href="css/styles-categories.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
-    <link href="css/styles-category-02-colors.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
+<!--    <link href="css/styles-category-02-colors.css" rel="stylesheet" type="text/css">-->
     <!-- JAVASCRIPT -->
     <script src="js/jquery.js"></script>
     <script src="js/jqueryui.js"></script>
@@ -31,7 +40,12 @@
     <!-- STICKY HEADER FOR ALL ARTICLES -->
     
     <header  data-position="fixed" data-fullscreen>    
-        <nav id="navbar">
+        
+        <div class="logo">
+                <a href="http://www.uscannenbergmedia.com"><img src="img/usc-annenberg-media-logo.svg" /></a>
+        </div>
+        
+        <nav class="navbar">
             <ul>
                 <a href="index.html" rel="external" data-ajax="false"><li>Home</li></a>
                 <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
@@ -40,6 +54,23 @@
                 <a href="category-04.html" rel="external" data-ajax="false"><li>People</li></a>
             </ul>
         </nav>
+        
+        <nav class="navbar-mobile">
+            <div class="burger-menu"></div>
+        </nav>
+        
+        <!-- Mobile menu -->
+
+        <nav class="mobile-menu">
+            <ul>
+                <a href="index.html" rel="external" data-ajax="false"><li style="border-top: 1px solid white;">Home</li></a>
+                <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
+                <a href="category-02.html" rel="external" data-ajax="false"><li class="category-active">Food</li></a>
+                <a href="category-03.html" rel="external" data-ajax="false"><li>News &amp; Culture</li></a>
+                <a href="category-04.html" rel="external" data-ajax="false"><li>People</li></a>
+            </ul>
+        </nav>  
+        
     </header>
 
 <!-- ************************************************************************ -->
@@ -61,7 +92,6 @@
             </nav>
         </a>    
 
-
         <!-- ARTICLE 1: Header image -->
         <div id="header-image-02-01" class="header-image">
             
@@ -69,7 +99,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-02.html"><div class="navdot-active"></div></a>
                     <a href="category-02.html#article2"><div class="navdot"></div></a>
                     <a href="category-02.html#article3"><div class="navdot"></div></a>
@@ -92,14 +122,14 @@
                 </div>
             </div>
             
-            <div class="parallax-caption featured-image-caption"><i>Featured photo caption goes here...</i></div>
+            <div class="parallax-caption featured-image-caption"><i>The Revolutionario owners are intent on staying in Exposition Park for as long as they can. "We love USC and the South Los Angeles community," chef Zadi said. "They have always supported us." Photo Credit: Montana Ruderman</i></div>
             
         </div>
 
         <!-- ARTICLE 1: TEXT SECTION STARTS -->
         
         <!-- ARTICLE 1: Social icons on mobile, hidden on desktop -->
-        <div id="social-icons-mobile"> 
+        <div class="social-icons-mobile"> 
 
             <!-- Facebook -->
             <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background facebook"><div class="facebook-icon"></div></div></a>
@@ -120,9 +150,9 @@
             <div class="text-container">
 
                 <!-- Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/Montana.jpg" />
+                    <img src="img/food/Montana.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Montana Ruderman</h4>
@@ -130,19 +160,19 @@
                     </div>
 
                     <!-- ARTICLE 1: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html&quote=North%20African%20taqueria%20fights%20to%20stay%20in%20South%20Los%20Angeles" title="Share on Facebook" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
 
                         <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://www.PUT-YOUR-ARTICLE-URL-HERE&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html&text=North%20African%20taqueria%20fights%20to%20stay%20in%20South%20Los%20Angeles:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html" target="_blank" title="Tweet"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
 
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html&title=North%20African%20taqueria%20fights%20to%20stay%20in%20South%20Los%20Angeles&summary=&source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html" target="_blank" title="Share on LinkedIn"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
 
                         <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.PUT-YOUR-ARTICLE-URL-HERE"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
+                        <a href="mailto:?subject=North%20African%20taqueria%20fights%20to%20stay%20in%20South%20Los%20Angeles&body=:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-02.html" target="_blank" title="Send email"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
 
                     </div>
 
@@ -152,7 +182,7 @@
 
                 <p>Two years ago married couple Farid Zadi and Susan Park&rsquo;s restaurateur dreams came true. They had searched all over Los Angeles for months before finally finding the perfect location: a space just west of USC, where they could live above their fledgling business and share their passion for fusion cuisine with Angelenos.</p>
 
-                   <p>&ldquo;I was working one day and my wife called me saying, &lsquo;I found a place and I just signed the lease. Give your two weeks&rsquo; notice and get over here.&rsquo; We invested all of our savings in opening the place,&rdquo; Zadi said.</p>
+                <p>&ldquo;I was working one day and my wife called me saying, &lsquo;I found a place and I just signed the lease. Give your two weeks&rsquo; notice and get over here.&rsquo; We invested all of our savings in opening the place,&rdquo; Zadi said.</p>
 
                 <p>Longtime participants in the Los Angeles culinary scene, Zadi and Park were optimistic about their future as restaurant owners. They vowed to invest as much as they could in serving food in South Los Angeles &mdash; a community where new real estate developments are putting pressure on local residents &mdash; in their new place, Revolutionario.</p>
 
@@ -162,7 +192,7 @@
 
                 <p>&ldquo;Mesquite-smoked lamb, black-eyed-pea falafel, handmade mixed-tamal tortillas and habanero harissa are just some of the ingredients we use here,&rdquo; Zadi said.</p>
                 
-                <img src="img/revolutionario01.jpg" />
+                <img class="mobile-image" src="img/food/revolutionario01.jpg" />
                 <p class="caption"><i>North African tacos from Revolutionario. Trained in Southern France, French-Algerian chef Farid Zadi developed an eye for cross-cultural culinary connections. The street foods of Mexico and North Africa gave him plenty to work with. "Mesquite-smoked lamb, black-eyed-pea falafel, handmade mixed-tamal tortillas and habanero harissa are just some of the ingredients we use here," Zadi said. Photo Credit: Montana Ruderman</i></p>
 
                 <p>Zadi and Park, a published food historian and expert in French and North African cuisine, opened their own culinary school, Ecole de Cuisine Pasadena, in 2010. Determined to introduce North African tacos to the city, the couple opened Revolutionario in Exposition Park five years later. The restaurant&rsquo;s fare quickly became popular among South Los Angeles residents, including nearby USC students. The community praise led to more widespread positive attention, even bringing them recognition from Cond&eacute; Nast Traveler Magazine and other publications.</p>
@@ -178,7 +208,8 @@
                 <p>Amid the chaos, the Revolutionario owners planned to close the fusion taqueria last July.</p>
 
                 <p>&ldquo;You just kind of want to give up, but if you&rsquo;re a resilient person you just can&rsquo;t,&rdquo; Park said.</p>
-                <img src="img/revolutionario02.jpg" />
+                
+                <img src="img/food/revolutionario02.jpg" />
                 <p class="caption"><i>Unsure if they'd be able to stay in their current location, the Revolutionario owners planned to close the fusion taqueria last July. "You just kind of want to give up, but if you’re a resilient person you just can’t," co-owner Susan Park said. Before completely losing hope, Park and chef Zadi reached out to the Inner City Law Center, a nonprofit legal firm that specializes in cases involving housing and homelessness among low-income families, for help. Photo courtesy of Susan Park</i></p>
                 
                 <p>Before completely losing hope, Zadi and Park reached out to the Inner City Law Center, a nonprofit legal firm that specializes in cases involving housing and homelessness among low-income families, for help.</p>
@@ -188,9 +219,6 @@
                 <p>Pro bono attorneys helped Zadi and Park secure a two-year lease with the automatic right to renew, allowing Revolutionario to remain in the space, at least for the foreseeable future. While the Revolutionario team is excited to keep serving North African fusion dishes in South Los Angeles for a little longer, Park said they continue to battle a possible rent increase.</p>
 
                 <p>Revolutionario is in a building owned by Tommy and Rosalinda Roark of the Roark Family Trust, according to the Los Angeles County Office of the Assessor. The building owners did not respond to multiple calls and emails requesting an interview.</p>
-                
-                <img src="img/revolutionario03.jpg" />
-                <p class="caption"><i>The Revolutionario owners are intent on staying in Exposition Park for as long as they can. "We love USC and the South Los Angeles community," chef Zadi said. "They have always supported us." Photo Credit: Montana Ruderman</i></p>
 
                 <p>Zadi and Park represent just two of many South LA residents facing similar issues because of rising gentrification.</p>
 
@@ -200,16 +228,26 @@
 
                 <p>The Golden State Environmental Justice Alliance and SAJE, two nonprofit groups in the area, took the Los Angeles City Council to court last year to block a $1.2 billion development in Historic South Central. In separate complaints the groups alleged that the mixed-use project would lead to more expensive housing and displacement.</p>
 
+                <!-- pull quote -->
+                <blockquote class="pull-quote">
+                    <div class="quote-icon-container">
+                        <img src="img/quote-01.svg" />
+                    </div>
+                    <div class="quote-container">
+                        <p>&ldquo;The city needs to advocate for small-business owners and tenants in rent-controlled buildings,&rdquo;</p>
+                        <p class="pull-quote-source">&mdash; Susan Park, entrepreneur</p>
+                    </div>
+                </blockquote>
+                <!-- end of pull quote -->
+                
                 <p>USC Village opened in University Park at the end of the summer. The $700 million project, spanning 15 acres, is the largest development in the school&rsquo;s history.</p>
 
                 <p>A State of the Neighborhood Report conducted by USC found that the number of families facing economic and health issues in the surrounding area has increased since 2000, even as the population unaffiliated with the university has decreased due to displacement. The rate of families in poverty in the area has risen by more than 11 percent, according to the report.</p>
 
-                <p>&ldquo;The city needs to advocate for small-business owners and tenants in rent-controlled buildings,&rdquo; Park said.</p>
-
                 <p>Fastened along the walls of Revolutionario are dollar bills and messages from customers who hope to see Zadi and Park stay in Exposition Park indefinitely.</p>
 
                 <p>&ldquo;People forget that food can heal your soul, and here, at Revolutionario, they feed to heal,&rdquo; a fan scribbled on the wall. Another pinned-up note of support reads, &ldquo;Power to Revolutionario! The world needs more places like this.&rdquo;</p>
-                   <img src="img/revolutionario04.jpg" />
+                   <img src="img/food/revolutionario04.jpg" />
                 <p class="caption"><i>Fastened along the walls of Revolutionario are dollar bills and messages from fans of Zadi and Park's restaurant. Photo Credit: Montana Ruderman</i></p>
 
                 <p>Michael Cassutt, a USC student and Revolutionario regular, is worried that the restaurant will be forced to leave after the lease expires.</p>
@@ -230,7 +268,7 @@
 
                 <p>&ldquo;This is our home,&rdquo; Zadi said. &ldquo;We want to stay here for as long as possible.&rdquo;</p>
                 
-                <img src="img/revolutionario05.jpg" />
+                <img class="mobile-image" src="img/food/revolutionario05.jpg" />
                 <p class="caption"><i>The Revolutionario owners in the kitchen of their North African taqueria. These days Park and Zadi are working toward a new dream. They hope one day to purchase the entire building where they and their business live. "This is our home," Zadi said. "We want to stay here for as long as possible." Photo courtesy of Farid Zadi</i></p>
             
             
@@ -500,7 +538,12 @@
 
         <!-- ARTICLE 1: FOOTER STARTS -->
         
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer>
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
 
         </div>
     </div>
@@ -531,7 +574,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-02.html"><div class="navdot"></div></a>
                     <a href="category-02.html#article2"><div class="navdot-active"></div></a>
                     <a href="category-02.html#article3"><div class="navdot"></div></a>
@@ -563,9 +606,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 2: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/food/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -573,7 +616,7 @@
                     </div>
 
                     <!-- ARTICLE 2: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -982,7 +1025,13 @@
             
         <!-- ARTICLE 2: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer>
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
 
@@ -1012,7 +1061,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-02.html"><div class="navdot"></div></a>
                     <a href="category-02.html#article2"><div class="navdot"></div></a>
                     <a href="category-02.html#article3"><div class="navdot-active"></div></a>
@@ -1044,9 +1093,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 3: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/food/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -1054,7 +1103,7 @@
                     </div>
 
                     <!-- ARTICLE 3: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -1349,7 +1398,13 @@
 
         <!-- ARTICLE 3: FOOTER STARTS --> 
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     
@@ -1374,12 +1429,12 @@
         </a>
 
         <div id="header-image-02-04" class="header-image">
-            
+
             <div class="header-buttons-container">
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-02.html"><div class="navdot"></div></a>
                     <a href="category-02.html#article2"><div class="navdot"></div></a>
                     <a href="category-02.html#article3"><div class="navdot"></div></a>
@@ -1411,9 +1466,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 4: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/food/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -1421,7 +1476,7 @@
                     </div>
 
                     <!-- ARTICLE 4: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -1695,7 +1750,13 @@
 
         <!-- ARTICLE 4: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     

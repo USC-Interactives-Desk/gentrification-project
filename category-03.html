@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>South Gentrification – Culture</title>
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:url" content="http://annenberginteractives.com/south_centrification/category-03.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="South Gentrification - Culture" />
+    <meta property="og:image" content="http://annenberginteractives.com/south_centrification/img/issa_featured.jpeg" />
+    <meta property="og:image" content="http://annenberginteractives.com/south_centrification/img/service_featured.jpeg" />
+    <meta property="og:image" content="http://annenberginteractives.com/south_centrification/img/dreamers_featured.png" />
+    <!-- TWITTER CARD DATA -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="South Gentrification - Culture">
+    <meta name="twitter:image:src" content="http://annenberginteractives.com/south_centrification/img/issa_featured.jpeg">
     <!-- FONTS -->
     <script src="https://use.fontawesome.com/721ef12779.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet" type="text/css">
@@ -16,7 +27,7 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
     <link href="css/styles-categories.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
-    <link href="css/styles-category-03-colors.css" rel="stylesheet" type="text/css"> <!-- Stefani -->
+<!--    <link href="css/styles-category-03-colors.css" rel="stylesheet" type="text/css"> -->
     <!-- JAVASCRIPT -->
     <script src="js/jquery.js"></script>
     <script src="js/jqueryui.js"></script>
@@ -30,8 +41,13 @@
     
     <!-- STICKY HEADER FOR ALL ARTICLES -->
     
-    <header  data-position="fixed" data-fullscreen>    
-        <nav id="navbar">
+    <header  data-position="fixed" data-fullscreen>
+        
+        <div class="logo">
+                <a href="http://www.uscannenbergmedia.com"><img src="img/usc-annenberg-media-logo.svg" /></a>
+        </div>
+        
+        <nav class="navbar">
             <ul>
                 <a href="index.html" rel="external" data-ajax="false"><li>Home</li></a>
                 <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
@@ -40,6 +56,23 @@
                 <a href="category-04.html" rel="external" data-ajax="false"><li>People</li></a>
             </ul>
         </nav>
+        
+        <nav class="navbar-mobile">
+            <div class="burger-menu"></div>
+        </nav>
+        
+        <!-- Mobile menu -->
+
+        <nav class="mobile-menu">
+            <ul>
+                <a href="index.html" rel="external" data-ajax="false"><li style="border-top: 1px solid white;">Home</li></a>
+                <a href="category-01.html" rel="external" data-ajax="false"><li>Gentrification</li></a>
+                <a href="category-02.html" rel="external" data-ajax="false"><li>Food</li></a>
+                <a href="category-03.html" rel="external" data-ajax="false"><li class="category-active">News &amp; Culture</li></a>
+                <a href="category-04.html" rel="external" data-ajax="false"><li>People</li></a>
+            </ul>
+        </nav>      
+        
     </header>
 
 <!-- ************************************************************************ -->
@@ -63,13 +96,13 @@
 
 
         <!-- ARTICLE 1: Header image -->
-        <div id="header-image-03-01" class="header-image">
+        <div id="header-image-03-01" class="header-image" style="background-position: 60% 0%;">
             
             <div class="header-buttons-container">
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot-active"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -90,7 +123,7 @@
             <!-- ARTICLE 1: Header curtain dims the background image -->
             <div class="image-curtain">
                 <div class="header-texts">
-                        <h1>Packed house for USC event with creator and star of HBO’s "Insecure"</h1>
+                        <h1>Packed house for USC event with creator of HBO’s &ldquo;Insecure&rdquo;</h1>
                         <h3></h3>
                 </div>
             </div>
@@ -102,7 +135,7 @@
         <!-- ARTICLE 1: TEXT SECTION STARTS -->
         
         <!-- ARTICLE 1: Social icons on mobile, hidden on desktop -->
-        <div id="social-icons-mobile"> 
+        <div class="social-icons-mobile"> 
 
             <!-- Facebook -->
             <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background facebook"><div class="facebook-icon"></div></div></a>
@@ -123,9 +156,9 @@
             <div class="text-container">
 
                 <!-- Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/pankey.jpg" />
+                    <img src="img/culture/pankey.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Roy Pankey</h4>
@@ -133,19 +166,19 @@
                     </div>
 
                     <!-- ARTICLE 1: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html&quote=Packed%20house%20for%20USC%20event%20with%20creator%20and%20star%20of%20HBO%E2%80%99s%20%E2%80%9CInsecure%E2%80%9D" title="Share on Facebook" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
 
                         <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://www.PUT-YOUR-ARTICLE-URL-HERE&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html&text=Packed%20house%20for%20USC%20event%20with%20creator%20and%20star%20of%20HBO%E2%80%99s%20%E2%80%9CInsecure%E2%80%9D:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html" target="_blank" title="Tweet"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
 
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html&title=Packed%20house%20for%20USC%20event%20with%20creator%20and%20star%20of%20HBO%E2%80%99s%20%E2%80%9CInsecure%E2%80%9D&summary=&source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html" target="_blank" title="Share on LinkedIn"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
 
                         <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.PUT-YOUR-ARTICLE-URL-HERE"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
+                        <a href="mailto:?subject=Packed%20house%20for%20USC%20event%20with%20creator%20and%20star%20of%20HBO%E2%80%99s%20%E2%80%9CInsecure%E2%80%9D&body=:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html" target="_blank" title="Send email"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
 
                     </div>
 
@@ -153,9 +186,24 @@
 
                 <!-- ARTICLE 1: 1st body text passage starts -->
 
-              <p>Thirty minutes before the event&rsquo;s start time, all the available seats were already filled with Issa Rae fans. Even standing room was scarce to see the creator and star of HBO&rsquo;s hit comedy &ldquo;Insecure&rdquo; at USC on Monday, Nov. 13. Rae was at Wallis Annenberg Hall for a live interview with USC professor Taj Frazier, as part of Annenberg&rsquo;s ongoing HBO Diverse Voices Forum series.</p>
+                <p>Thirty minutes before the event&rsquo;s start time, all the available seats were already filled with Issa Rae fans. Even standing room was scarce to see the creator and star of HBO&rsquo;s hit comedy &ldquo;Insecure&rdquo; at USC on Monday, Nov. 13. Rae was at Wallis Annenberg Hall for a live interview with USC professor Taj Frazier, as part of Annenberg&rsquo;s ongoing HBO Diverse Voices Forum series.</p>
                 
-                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BbddENFDQ6D/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BbddENFDQ6D/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#packedhouse for #issarae from #hbo show #insecure #ascj #diversevoicesforum. #tajfrazier #joshkun</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/n2muzic/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> n2muzic</a> (@n2muzic) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-14T03:15:51+00:00">Nov 13, 2017 at 7:15pm PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                <!-- twitter 01 --> 
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BbddENFDQ6D/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.1),0 1px 10px 0 rgba(0,0,0,0.1); margin: 1px; max-width:100%; padding:0; width:100%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                
+                    <div style="padding:8px;">
+                        <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
+                            <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;">
+                            </div>
+                        </div>
+                        <p style=" margin:8px 0 0 0; padding:0 4px;"><a href="https://www.instagram.com/p/BbddENFDQ6D/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#packedhouse for #issarae from #hbo show #insecure #ascj #diversevoicesforum. #tajfrazier #joshkun</a></p>
+                    
+                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/n2muzic/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> n2muzic</a> (@n2muzic) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-14T03:15:51+00:00">Nov 13, 2017 at 7:15pm PST</time></p>
+                    </div>
+                </blockquote>
+                
+                <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                <!-- end of twitter 01 -->
 
                 <p>The actress shared with Frazier and the crowd about her life growing up in South LA, getting started in the television industry, and creating accurate depictions of the black experience in her HBO show &ldquo;Insecure.&rdquo;</p>
 
@@ -164,9 +212,14 @@
                 <p>After moving to South LA&rsquo;s affluent View Park-Windsor Hills neighborhood in sixth grade, Rae attended Palms Middle School, Brentwood Private School and King/Drew Magnet High School of Medicine and Science.</p>
 
                 <p>&ldquo;The area I grew up in &mdash; on television South Central gets a bad rep. It&rsquo;s like white characters going to the &lsquo;hood&rsquo; hoping to not get shot,&rdquo; she said.</p>
+        
+                <!-- twitter 02 -->
+                <blockquote class="twitter-tweet" data-lang="en-gb" >
+                    <p lang="en" dir="ltr">Really enjoyed seeing .<a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw">@IssaRae</a> tonight at USC. So thankful to see her positively and creatively representing south central/windsorhills/inglewood etc.  <a href="https://twitter.com/hashtag/SoExcitedToSeeUsTellingOurOwnStories?src=hash&amp;ref_src=twsrc%5Etfw">#SoExcitedToSeeUsTellingOurOwnStories</a> 💫 <a href="https://t.co/Un2n7UsELY">pic.twitter.com/Un2n7UsELY</a></p>&mdash; ri. (@rioJACKK) <a href="https://twitter.com/rioJACKK/status/930293884197859329?ref_src=twsrc%5Etfw">14 November 2017</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- end of twitter 02 -->
                 
-                <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr" style="width:100%">Really enjoyed seeing .<a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw">@IssaRae</a> tonight at USC. So thankful to see her positively and creatively representing south central/windsorhills/inglewood etc.  <a href="https://twitter.com/hashtag/SoExcitedToSeeUsTellingOurOwnStories?src=hash&amp;ref_src=twsrc%5Etfw">#SoExcitedToSeeUsTellingOurOwnStories</a> 💫 <a href="https://t.co/Un2n7UsELY">pic.twitter.com/Un2n7UsELY</a></p>&mdash; ri. (@rioJACKK) <a href="https://twitter.com/rioJACKK/status/930293884197859329?ref_src=twsrc%5Etfw">November 14, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                 <p>&ldquo;Insecure&rdquo; is set in Inglewood, a city that borders several South LA neighborhoods. Fans praised Rae for portraying a multidimensional community, instead of perpetuating tired clich&eacute;s about the area, like rampant crime and gang violence.</p>
 
@@ -176,8 +229,12 @@
 
                 <p>&ldquo;She&rsquo;s not just in it and writing clich&eacute; Hollywood stories,&rdquo; said Heran Mamo, a USC journalism student who attended the event. &ldquo;She&rsquo;s telling the real deal about what it&rsquo;s like to be black, to be a black woman, and to be in South LA. I think it&rsquo;s incredible.&rdquo;</p>
                 
-                <blockquote width="520" class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">If you&#39;re black and in South LA, you better know <a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw">@IssaRae</a>! Excited to see you at <a href="https://twitter.com/USC?ref_src=twsrc%5Etfw">@USC</a> this Monday</p>&mdash; heran mamo🎧 (@heranmamo) <a href="https://twitter.com/heranmamo/status/929432556151308288?ref_src=twsrc%5Etfw">November 11, 2017</a></blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- twitter 03 -->
+                <blockquote class="twitter-tweet" data-lang="en-gb">
+                    <p lang="en" dir="ltr">If you&#39;re black and in South LA, you better know <a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw">@IssaRae</a>! Excited to see you at <a href="https://twitter.com/USC?ref_src=twsrc%5Etfw">@USC</a> this Monday</p>&mdash; heran mamo🎧 (@heranmamo) <a href="https://twitter.com/heranmamo/status/929432556151308288?ref_src=twsrc%5Etfw">11 November 2017</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- end of twitter 03 -->
 
                 <p>Making web videos jumpstarted Rae&rsquo;s career. During her senior year at Stanford, Rae said, she wanted to make a mockumentary about the experience of being a black student at the prestigious university. That project turned into a web series called &ldquo;Dorm Diaries.&rdquo;</p>
 
@@ -185,15 +242,28 @@
 
                 <p>&ldquo;It was so beautiful to be on set and be able to look to people you don&rsquo;t typically see in traditional TV and movies,&rdquo; she said.</p>
                 
-                <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw">@IssaRae</a> really showed up for her speaking gig at USC in a Stanford hat and you know what, I respect it</p>&mdash; McKenna Aiello (@McKennaAiello) <a href="https://twitter.com/McKennaAiello/status/930278846187806720?ref_src=twsrc%5Etfw">November 14, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+                <!-- pull quote -->
+                <blockquote class="pull-quote">
+                    <div class="quote-icon-container">
+                        <img src="img/quote-01.svg" />
+                    </div>
+                    <div class="quote-container">
+                        <p><a href="https://twitter.com/IssaRae?ref_src=twsrc%5Etfw"><strong>"@IssaRae</strong></a> really showed up for her speaking gig at USC in a Stanford hat and you know what, I respect it."</p>
+                        <p class="pull-quote-source">&mdash; McKenna Aiello (@McKennaAiello), November 14, 2017</p>
+                    </div>
+                </blockquote>
+                <!-- end of pull quote -->
+                
                 <p>Before &ldquo;Insecure,&rdquo; Rae declined network television offers for her YouTube series &ldquo;The Mis-Adventures of Awkward Black Girl.&rdquo; She said she didn&rsquo;t want her work to be censored. A one point a friend convinced Rae to meet with a network interested in taking the series from web to TV, but it was a non-starter.</p>
 
                 <p>&ldquo;It just affirmed what I thought early on just in terms of the fact that they didn&rsquo;t understand it, they didn&rsquo;t know what to do with the show,&rdquo; said Rae. &ldquo;There were these assumptions made by non-black people, non-black executives about what black people wanted to see.&rdquo;</p>
                 
-                <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">&quot;There&#39;s so many people not hiring black writers because they don&#39;t trust them to write anything else... or even to write our own stories.&quot;</p>&mdash; IntersectionsSouthLA (@southlareport) <a href="https://twitter.com/southlareport/status/930272554425622528?ref_src=twsrc%5Etfw">November 14, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- twitter 05 -->
+                <blockquote class="twitter-tweet" data-lang="en-gb">
+                    <p lang="en" dir="ltr">&quot;There&#39;s so many people not hiring black writers because they don&#39;t trust them to write anything else... or even to write our own stories.&quot;</p>&mdash; IntersectionsSouthLA (@southlareport) <a href="https://twitter.com/southlareport/status/930272554425622528?ref_src=twsrc%5Etfw">14 November 2017</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- end of twitter 05 -->
 
                 <p>Oneugbe considers Rae a role model for creative women of color, especially in the film and television industry. She praised Rae for &ldquo;making waves in an industry where access is limited for those who are not privileged to have certain opportunities.&rdquo;</p>
 
@@ -203,9 +273,13 @@
 
                 <p>Though fans asked at the event, Rae wouldn&rsquo;t give any hints as to what is to come for the show&rsquo;s upcoming third season.</p>
                 
-                <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Back in the writers room. Season 3. 😬 <a href="https://t.co/gQLGDwWz3A">pic.twitter.com/gQLGDwWz3A</a></p>&mdash; Issa Rae (@IssaRae) <a href="https://twitter.com/IssaRae/status/925172821738713089?ref_src=twsrc%5Etfw">October 31, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+                <!-- twitter 06 -->
+                <blockquote class="twitter-tweet" data-lang="en-gb">
+                    <p lang="en" dir="ltr">Back in the writers room. Season 3. 😬 <a href="https://t.co/gQLGDwWz3A">pic.twitter.com/gQLGDwWz3A</a></p>&mdash; Issa Rae (@IssaRae) <a href="https://twitter.com/IssaRae/status/925172821738713089?ref_src=twsrc%5Etfw">31 October 2017</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- end of twitter 06 -->
+                
                 <p>In the meantime Rae will no doubt continue to destroy stereotypes, tell real stories and make waves in the industry.</p>
 
         <!--    </div>
@@ -472,7 +546,12 @@
 
         <!-- ARTICLE 1: FOOTER STARTS -->
         
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer>
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
 
         </div>
     </div>
@@ -503,7 +582,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot-active"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -524,12 +603,12 @@
             <!-- ARTICLE 2: Header curtain dims the background image -->
             <div class="image-curtain"> 
                 <div class="header-texts">
-                        <h1>The Art of Service</h1>
-                        <h3>An artist finds creative and spiritual fulfillment in Leimert Park by serving individuals experiencing homelessness</h3>
+                        <h1>An artist serves individuals experiencing homelessness</h1>
+                        <h3></h3>
                 </div>
             </div>
             
-            <div class="parallax-caption featured-image-caption"><i>Featured photo caption goes here...</i></div>
+            <div class="parallax-caption featured-image-caption"><i>Ganeshan adheres to the Hindu principle of minimalism by working solely out of her van. Photo Credit: Daniela Silva</i></div>
             
         </div>
 
@@ -538,9 +617,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 2: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/silva.jpg" />
+                    <img src="img/culture/silva.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Daniela Silva</h4>
@@ -548,19 +627,19 @@
                     </div>
 
                     <!-- ARTICLE 2: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2&quote=The%20Art%20of%20Service" title="Share on Facebook" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
 
                         <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://www.PUT-YOUR-ARTICLE-URL-HERE&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2&text=The%20Art%20of%20Service:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2" target="_blank" title="Tweet"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
 
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2&title=The%20Art%20of%20Service&summary=An%20artist%20finds%20creative%20spirit%20fulfillment%20in%20Leimert%20Park%20by%20serving%20individuals%20experiencing%20homelessness&source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2" target="_blank" title="Share on LinkedIn"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
 
                         <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.PUT-YOUR-ARTICLE-URL-HERE"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
+                        <a href="mailto:?subject=The%20Art%20of%20Service&body=An%20artist%20finds%20creative%20spirit%20fulfillment%20in%20Leimert%20Park%20by%20serving%20individuals%20experiencing%20homelessness:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article2" target="_blank" title="Send email"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
 
                     </div>
 
@@ -568,7 +647,7 @@
 
                 <!-- ARTICLE 2: 1st body text passage starts -->
 
-               <p>It&rsquo;s easy to overlook the white GMC cargo van parked at the intersection of Degnan Boulevard and 43rd Street, in the cultural epicenter of South Los Angeles&rsquo; Leimert Park. The artist inside, however, known in the community for her sharp tongue and generous heart, is anything but unassuming.</p>
+                <p>It&rsquo;s easy to overlook the white GMC cargo van parked at the intersection of Degnan Boulevard and 43rd Street, in the cultural epicenter of South Los Angeles&rsquo; Leimert Park. The artist inside, however, known in the community for her sharp tongue and generous heart, is anything but unassuming.</p>
 
                 <p>&ldquo;They call me Yogi,&rdquo; she says, a playful grin spreading across her face. &ldquo;They see me and they yell, &lsquo;There goes Yogi,&rsquo; and tell me whatever it is that they need.&rdquo;</p>
                 
@@ -586,8 +665,8 @@
 
                 <p>&ldquo;I make everything. I make dolls, mandalas, just whatever comes to my head, or if I&rsquo;m lucky, to my heart,&rdquo; she says, opening the dual doors at the rear of the van, revealing the cluttered array of paper, fabrics and supplies. &ldquo;I&rsquo;m a starving artist,&rdquo; Ganeshan says with a laugh. &ldquo;So, I use pretty much any canvas that I can find.&rdquo;</p>
                 
-                 <img src="img/service01.jpeg" class="inlineimg" style="width:650px;"/>
-                <p class="caption"><i>Ganeshan adheres to the Hindu principle of minimalism by working solely out of her van. Photo Credit: Daniela Silva</i></p>
+                <img class="mobile-image" src="img/culture/service02.jpeg" />
+                <p class="caption"><i>Eating well is its own art form — it gives you dignity,” Ganeshan says. The artist teaches her patrons to cook healthy meals with the vegetables she buys at farmers markets around Los Angeles. Photo Credit: Daniela Silva</i></p>
 
                 <p>Selling art also affords her the supplies necessary to tailor donated clothing and buy food for the homeless and impoverished.</p>
 
@@ -601,12 +680,22 @@
 
                 <p>Ganeshan sifts through the van&rsquo;s clutter, the seats barely visible underneath crumpled pieces of paper. Gold bracelets engraved with Sanskrit clang together. She pulls out a colorful sketch of a mandala she recently made. It signifies her new mission, she says, to &ldquo;challenge the root of violence and displacement.&rdquo; Art is both her income and her outlet.</p>
                 
-                <img src="img/service02.jpeg" class="inlineimg" style="width:650px;"/>
-                <p class="caption"><i>Eating well is its own art form — it gives you dignity,” Ganeshan says. The artist teaches her patrons to cook healthy meals with the vegetables she buys at farmers markets around Los Angeles. Photo Credit: Daniela Silva</i></p>
+                <img class="mobile-image" src="img/culture/service01.jpeg" />
+                <p class="caption"><i>Ganeshan adheres to the Hindu principle of minimalism by working solely out of her van. Photo Credit: Daniela Silva</i></p>
 
                 <p>The artist intends for her work to emphasize mindfulness and self-betterment. Leimert Park has the seventh-highest crime rate in Los Angeles County, according to the Los Angeles Times. Ganeshan believes that here the key to change comes from within.</p>
 
-                <p>&ldquo;People have to know how to live with each other, and then they&rsquo;ll gain insight as how to live with themselves,&rdquo; she says.</p>
+                <!-- pull quote -->
+                <blockquote class="pull-quote">
+                    <div class="quote-icon-container">
+                        <img src="img/quote-01.svg" />
+                    </div>
+                    <div class="quote-container">
+                        <p>&ldquo;People have to know how to live with each other, and then they&rsquo;ll gain insight as how to live with themselves,&rdquo;</p>
+                        <p class="pull-quote-source">&mdash; Yogita Ganeshan, artist</p>
+                    </div>
+                </blockquote>
+                <!-- end of pull quote -->
 
                 <p>The theme of community threads most of Ganeshan&rsquo;s pieces together. The next painting she pulled from the van is a vibrant watercolor of women walking to market with produce baskets tied to their heads.</p>
 
@@ -617,7 +706,8 @@
                 <p>While growing up in Guyana, Ganeshan says she learned the most important community is the one at home, the family. She pulls out another didactic painting. This parchment paper watercolor illustrates a hen feeding her chicks, a depiction of the symbiotic relationship between a parent and their children.</p>
 
                 <p>&ldquo;I don&rsquo;t care if you got money or not. That&rsquo;s key &mdash; I don&rsquo;t care if your parents were drugged out. I don&rsquo;t even care if you were a victim of compromise,&rdquo; she says. &ldquo;Once you can forgive, you can heal.&rdquo;</p>
-                <img src="img/service03.jpeg" class="inlineimg" style="width:650px;"/>
+                
+                <img src="img/culture/service03.jpeg" />
                 <p class="caption"><i>“Feed them Right” painting by Yogita Ganeshan. Photo Credit: Daniela Silva</i></p>
 
                 <p>New Life Society used to feed up to 100 people every day of the week. These days Ganeshan helps roughly half as many, but with the extra time she includes lessons in self-care, a practice she believes transcends basic necessities.</p>
@@ -833,7 +923,13 @@
             
         <!-- ARTICLE 2: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer>
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
 
@@ -863,7 +959,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot-active"></div></a>
@@ -898,9 +994,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 3: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/almasi.jpg" />
+                    <img src="img/culture/almasi.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Aya Almasi</h4>
@@ -908,19 +1004,19 @@
                     </div>
 
                     <!-- ARTICLE 3: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3&quote=Chess%20Club%20Found%20Home%20in%20Leimert%20Park%20McDonald%E2%80%99s" title="Share on Facebook" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
 
                         <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://www.PUT-YOUR-ARTICLE-URL-HERE&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3&text=Chess%20Club%20Found%20Home%20in%20Leimert%20Park%20McDonald%E2%80%99s:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3" target="_blank" title="Tweet"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
 
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3&title=Chess%20Club%20Found%20Home%20in%20Leimert%20Park%20McDonald%E2%80%99s&summary=An%20artist%20finds%20creative%20spirit%20fulfillment%20in%20Leimert%20Park%20by%20serving%20individuals%20experiencing%20homelessness&source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3" target="_blank" title="Share on LinkedIn"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
 
                         <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.PUT-YOUR-ARTICLE-URL-HERE"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
+                        <a href="mailto:?subject=Chess%20Club%20Found%20Home%20in%20Leimert%20Park%20McDonald%E2%80%99s&body=An%20artist%20finds%20creative%20spirit%20fulfillment%20in%20Leimert%20Park%20by%20serving%20individuals%20experiencing%20homelessness:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article3" target="_blank" title="Send email"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
 
                     </div>
 
@@ -928,11 +1024,11 @@
 
                 <!-- ARTICLE 3: 1st body text passage starts -->
                 
-                <div style="display: block; width: 700px; margin: 0px auto;"><iframe width="700" height="400" src="https://www.youtube.com/embed/gp8vA8t-kUE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
-
-               <p>McDonald's restaurants don&rsquo;t usually vary much from place to place, but one Leimert Park location serves up chess matches along with the usual coffee and fries. </p>
+                <p>McDonald's restaurants don&rsquo;t usually vary much from place to place, but one Leimert Park location serves up chess matches along with the usual coffee and fries. </p>
 
                 <p>Both seasoned and first-time chess players have been meeting up here every day for more than five years, all for the joy of the pastime. On busy evenings, you can find at least six chess games going on at the same time.</p>
+                
+                <iframe src="https://www.youtube.com/embed/gp8vA8t-kUE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
                 <p>"Everyone has gotten to know who's good and who's not," said Robert Osby, one of the club's founders. "Everybody's friendly, we like to keep a mellow crowd," Osby said.</p>
 
@@ -1214,7 +1310,13 @@
 
         <!-- ARTICLE 3: FOOTER STARTS --> 
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     
@@ -1239,12 +1341,12 @@
         </a>
 
         <div id="header-image-03-04" class="header-image">
-            
+
             <div class="header-buttons-container">
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -1279,9 +1381,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 4: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/kasumov.jpg" />
+                    <img src="img/culture/kasumov.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Aziza Kasumov</h4>
@@ -1289,31 +1391,33 @@
                     </div>
 
                     <!-- ARTICLE 4: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4&quote=South%20LA%20DACA%20recipients%20worry%20about%20their%20future" title="Share on Facebook" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
 
                         <!-- Twitter -->
-                        <a href="https://twitter.com/share?url=https://www.PUT-YOUR-ARTICLE-URL-HERE&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
+                        <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4&text=South%20LA%20DACA%20recipients%20worry%20about%20their%20future:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4" target="_blank" title="Tweet"><div class="icon-background" brand-color="#00ACED"><div class="twitter-icon"></div></div></a>
 
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4&title=South%20LA%20DACA%20recipients%20worry%20about%20their%20future&summary=&source=http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4" target="_blank" title="Share on LinkedIn"><div class="icon-background" brand-color="#0077B5"><div class="linkedin-icon"></div></div></a>
 
                         <!-- Email -->
-                        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.PUT-YOUR-ARTICLE-URL-HERE"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
+                        <a href="mailto:?subject=South%20LA%20DACA%20recipients%20worry%20about%20their%20future&body=:%20http%3A%2F%2Fannenberginteractives.com%2Fsouth_centrification%2Fcategory-03.html%23article4" target="_blank" title="Send email"><div class="icon-background" brand-color="#C50000"><div class="email-icon" brand-color="#C50000"></div></div></a>
 
                     </div>
 
                 </div>
 
                 <!-- ARTICLE 4: 1st body text passage starts -->
-                <div style="display: block; width: 700px; margin: 0px auto;"><iframe width="700" height="400" src="https://www.youtube.com/embed/ZE5V80Tfgh8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
                 
                 <p>Javier Avalos, Michelle Segura, Heymi Aguirre and Jose Contreras have spent the majority of their lives in the United States. All four arrived in the country illegally as children.</p>
 
                 <p>Now they're young adults, living in South LA and pursuing higher education &mdash; an opportunity made easier by the Obama-era program Deferred Action for Childhood Arrivals, also known as DACA.</p>
-<p>But after the Trump Administration announced in September its plans to end DACA, the so-called Dreamers' futures became less clear. </p>
+                
+                <iframe src="https://www.youtube.com/embed/ZE5V80Tfgh8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                
+                <p>But after the Trump Administration announced in September its plans to end DACA, the so-called Dreamers' futures became less clear. </p>
 
                 <p>&ldquo;My parents brought me to the United States in order for me to complete a better and successful future for myself,&rdquo; said Heymi Aguirre, a high school senior with aspirations to study criminology. </p>
 
@@ -1560,7 +1664,13 @@
 
         <!-- ARTICLE 4: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     
@@ -1584,13 +1694,13 @@
             </nav>
         </a>
 
-        <div id="header-image-01-03" class="header-image">
+        <div id="header-image-01-05" class="header-image">
             
             <div class="header-buttons-container">
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -1625,9 +1735,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 5: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/culture/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -1635,7 +1745,7 @@
                     </div>
 
                     <!-- ARTICLE 5: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -1859,9 +1969,9 @@
                 
                 <!-- Cat 03 Article 04 -->
                 <a href="category-03.html#article4" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
-                        <p>You are here</p>
-                        <div class="carousel-arrow-active"></div>
+                    <div class="carousel-cell related-pho-img" cat="cat-03">
+                        <p>News &amp; Culture 4/7</p>
+                        <div class="carousel-arrow"></div>
                         <img src="img/culture/related-03-04.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -1871,9 +1981,9 @@
                 
                 <!-- Cat 03 Article 05 -->
                 <a href="category-03.html#article5" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img" cat="cat-03">
-                        <p>News &amp; Culture 5/7</p>
-                        <div class="carousel-arrow"></div>
+                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
+                        <p>You are here</p>
+                        <div class="carousel-arrow-active"></div>
                         <img src="img/culture/related-03-05.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -1909,7 +2019,13 @@
             
         <!-- ARTICLE 5: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     
@@ -1939,7 +2055,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -1974,9 +2090,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 6: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/culture/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -1984,7 +2100,7 @@
                     </div>
 
                     <!-- ARTICLE 6: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -2208,9 +2324,9 @@
                 
                 <!-- Cat 03 Article 04 -->
                 <a href="category-03.html#article4" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
-                        <p>You are here</p>
-                        <div class="carousel-arrow-active"></div>
+                    <div class="carousel-cell related-pho-img" cat="cat-03">
+                        <p>News &amp; Culture 4/7</p>
+                        <div class="carousel-arrow"></div>
                         <img src="img/culture/related-03-04.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -2232,9 +2348,9 @@
                 
                 <!-- Cat 03 Article 06 -->
                 <a href="category-03.html#article6" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img" cat="cat-03">
-                        <p>News &amp; Culture 6/7</p>
-                        <div class="carousel-arrow"></div>
+                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
+                        <p>You are here</p>
+                        <div class="carousel-arrow-active"></div>
                         <img src="img/culture/related-03-06.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -2258,7 +2374,13 @@
             
         <!-- ARTICLE 6: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
     
@@ -2288,7 +2410,7 @@
                 
                 <div class="caption-button-container"></div>
                 
-                <div id="navdots-container">
+                <div class="navdots-container">
                     <a href="category-03.html"><div class="navdot"></div></a>
                     <a href="category-03.html#article2"><div class="navdot"></div></a>
                     <a href="category-03.html#article3"><div class="navdot"></div></a>
@@ -2323,9 +2445,9 @@
             <div class="text-container">
 
                 <!-- ARTICLE 7: Byline area starts-->
-                <div id="byline-container"> 
+                <div class="byline-container"> 
 
-                    <img src="img/author-photo.jpg" />
+                    <img src="img/culture/author-photo.jpg" />
 
                     <div id="byline-texts">
                         <h4>By Firstname Lastname</h4>
@@ -2333,7 +2455,7 @@
                     </div>
 
                     <!-- ARTICLE 7: Social icons on desktop, hidden on mobile -->
-                    <div id="social-icons"> 
+                    <div class="social-icons"> 
 
                         <!-- Facebook -->
                         <a href="http://www.facebook.com/sharer.php?u=https://www.PUT-YOUR-ARTICLE-URL-HERE" target="_blank"><div class="icon-background" brand-color="#3B5998"><div class="facebook-icon"></div></div></a>
@@ -2557,9 +2679,9 @@
                 
                 <!-- Cat 03 Article 04 -->
                 <a href="category-03.html#article4" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
-                        <p>You are here</p>
-                        <div class="carousel-arrow-active"></div>
+                    <div class="carousel-cell related-pho-img" cat="cat-03">
+                        <p>News &amp; Culture 4/7</p>
+                        <div class="carousel-arrow"></div>
                         <img src="img/culture/related-03-04.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -2593,9 +2715,9 @@
                 
                 <!-- Cat 03 Article 07 -->
                 <a href="category-03.html#article7" rel="external" data-ajax="false">
-                    <div class="carousel-cell related-pho-img" cat="cat-03">
-                        <p>News &amp; Culture 7/7</p>
-                        <div class="carousel-arrow"></div>
+                    <div class="carousel-cell related-pho-img-active" cat="cat-03">
+                        <p>You are here</p>
+                        <div class="carousel-arrow-active"></div>
                         <img src="img/culture/related-03-07.jpg" />
                         <h4>Excepteur sint occaecat cupidatat non proident</h4>
                     </div>
@@ -2607,7 +2729,13 @@
             
         <!-- ARTICLE 7: FOOTER STARTS -->
             
-        <footer>USC Annenberg Media 2017<div id="footer-spacer"></div></footer> 
+        <footer>
+            <img src="img/usc-annenberg-media-logo.svg" />
+            <p>All Rights Reserved © USC Annenberg Media 2018</p>
+            <p class="footer-credits">Design &amp; Coding: Stefani Urmas, Kristine de Leon, Rachel Cohrs</p>
+            <div id="footer-spacer"></div>
+        </footer>
+            
         </div>
     </div>
       
