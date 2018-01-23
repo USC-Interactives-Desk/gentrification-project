@@ -15,6 +15,17 @@ $(document).on('swipeleft swiperight', '.media', function(event) {
 $(document).on('swipeleft swiperight', '#related', function(event) {
     event.stopPropagation();
     event.preventDefault();
+    
+    console.log("swiped hello!")
+});
+
+
+// RELOAD ON SWIPE
+
+$(document).on('swipeleft swiperight', '#article1, #article2, #article3, #article4', function(event) {
+    
+    console.log("swiped hello!")
+    window.location.reload(true);
 });
 
 
