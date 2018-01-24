@@ -1,4 +1,4 @@
-/* styles.css
+/* styles.css 
    Project: USC Annenberg Media Interactives Desk
    Author: Stefani Urmas
    Date: Fall 2017
@@ -46,14 +46,6 @@ li#cat-01 {
 
 #header-image-02-01 {
     background-image: url(../img/food/revolutionario_featured.jpg);
-}
-
-#header-image-02-02 {
-    background-image: url(../img/food/tropics_featured.png);
-}
-
-#header-image-02-03 {
-    background-image: url(../img/food/paleta_featured.jpeg);
 }
 
 #header-image-03-01 {
@@ -357,7 +349,7 @@ p.caption {
     flex-flow: row wrap;
     margin-bottom: 14px;
 }
-
+        
 .byline-container img {
     float: left;
     width: 15%;
@@ -409,7 +401,7 @@ p.caption {
 .text-container iframe {
     width: 100%;
     height: auto;
-    border: 0px solid;
+    border: 0px solid; 
 }
 
 /***********************************/
@@ -494,7 +486,7 @@ p.pull-quote-source {
 .social-icons {
     float: left;
     width: 40%;
-    height: auto;
+    height: auto; 
     overflow: visible;
     box-sizing: border-box;
     margin: 0px;
@@ -646,7 +638,7 @@ section.media {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: black; 
     box-sizing: border-box;
 	padding: 0;
     margin: 0;
@@ -856,8 +848,8 @@ section.media {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 0;
-    height: 0;
+    width: 0; 
+    height: 0; 
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     border-right: 14px solid white;
@@ -868,8 +860,8 @@ section.media {
     bottom: 34px;
     top: 50%;
     transform: translateY(-50%);
-    width: 0;
-    height: 0;
+    width: 0; 
+    height: 0; 
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     border-left: 14px solid white;
@@ -902,7 +894,7 @@ section.media {
 }
 
 .progress,.progress2,.progress3,.progress4,.progress5,.progress6,.progress7,.progress8,.progress9,.progress10,.progress11,.progress12,.progress13,.progress14,.progress15,.progress16,.progress17,.progress18,.progress19,.progress20,.progress21,.progress22 {
-    height: 5px;
+    height: 5px;  
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1022,7 +1014,7 @@ section.media {
 }
 
 .mobile-gallery {
-   display: none;
+   display: none; 
 }
 
 .carousel-gallery {
@@ -1112,7 +1104,7 @@ section#related {
     clear: both;
     margin: 0px;
     padding: 5px 0px 0px 0px;
-    font-size: 18px;
+    font-size: 18px;   
     font-weight: 300;
     letter-spacing: 0px;
     text-align: center;
@@ -1124,7 +1116,7 @@ section#related {
     height: 12px;
     margin: 0px;
     padding: 0px;
-    font-size: 10px;
+    font-size: 10px;   
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1144,8 +1136,8 @@ section#related {
     clear: both;
     margin: 0px;
     margin: 5px auto;
-    width: 0;
-    height: 0;
+    width: 0; 
+    height: 0; 
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 8px solid #C50000;
@@ -1155,8 +1147,8 @@ section#related {
     clear: both;
     margin: 0px;
     margin: 6px auto 5px;
-    width: 0;
-    height: 0;
+    width: 0; 
+    height: 0; 
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 9px solid white;
@@ -1166,7 +1158,7 @@ section#related {
     position: relative;
     width: 100%;
     height: 140px;
-    margin: 0px;
+    margin: 0px; 
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
@@ -1188,7 +1180,7 @@ section#related {
     position: relative;
     width: 90%;
     height: 140px;
-    margin: 0px;
+    margin: 0px; 
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
@@ -1257,7 +1249,7 @@ section#related {
     padding: 4px;
     border: 2px solid #ddd;
     box-sizing: border-box;
-
+    
 }
 
 
@@ -1272,8 +1264,8 @@ section#related {
     p {
         font-size: 1.25em;
         line-height: 1.55em;
-    }
-
+    }    
+    
     .mobile-image {
         height: 400px;
         object-fit: cover;
@@ -1341,7 +1333,7 @@ section#related {
         bottom: 20px;
         float: right;
         width: 100%;
-        height: auto;
+        height: auto; 
         overflow: hidden;
         box-sizing: border-box;
         margin: 0px auto;
@@ -1435,7 +1427,7 @@ section#related {
     .email-icon:before {
         content: "\f0e0";
     }
-
+    
     /* MOBILE SCREENS < 480px
     /***********************************/
     /* PULL QUOTE */
@@ -1444,7 +1436,7 @@ section#related {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .quote-container {
         align-items: center;
 
@@ -1508,9 +1500,9 @@ section#related {
             height: 800px;
         background-color: aqua;
         }
-
-
-
+    
+    
+    
     /* MOBILE SCREENS < 480px **********************************/
     /* CAROUSEL PHOTO GALLERY */
 
@@ -1519,7 +1511,7 @@ section#related {
     }
 
     .mobile-gallery {
-       display: block;
+       display: block; 
     }
 
     .gallery-cell {
@@ -1569,9 +1561,9 @@ section#related {
         z-index: 900;
     }
 
-
-
-
+    
+    
+    
     /* MOBILE SCREENS < 480px **********************************/
     /* AUDIO GRID */
 
