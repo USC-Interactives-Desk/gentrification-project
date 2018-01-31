@@ -19,6 +19,15 @@ $(document).on('swipeleft swiperight', '#related', function(event) {
 
 
 /*************************************************/
+// PREVENTING SWIPE PAGE GESTURE ON SPECIFIC ELEMENTS
+
+$(document).on('swipeleft swiperight', '#article1, #article2, #article3, #article4', function(event) {
+    location.reload()
+    console.log("refresh works")
+});
+
+
+/*************************************************/
 // START OF DOCUMENT READY
 
 $(document).ready(function(){
